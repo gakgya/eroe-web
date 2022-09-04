@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap");
+
+.Topbarstyle {
+  width: 100%;
+  background-color: #ffffff;
+  height: 55px;
+  border-bottom: 2px solid #000000;
+  display: flex;
+}
+
+.Eroetext {
+  width: 372px;
+  margin: auto;
+  margin-top: -5px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  align-items: flex-end;
+  font-family: "Kaisei HarunoUmi", serif;
+}
+
+.topbarimg {
+  width: 24px;
+  height: 24px;
+}
+
+#menuimg {
+  margin-top: 17px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+#notifiimg,
+#userimg {
+  margin-top: 17px;
+  margin-right: 12px;
+}
