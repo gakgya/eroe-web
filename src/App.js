@@ -5,10 +5,11 @@ import Sidemenu from "./eroe/Sidemenu";
 import Mainpage from "./eroe/Mainpage";
 function App() {
   return (
-    <div>
+    <div style={{ height: "100vh", overflow: "hidden" }}>
       <Topbar />
-      <div style={{ display: "inline-flex" }}>
+      <div style={{ display: "flex", height: "90%" }}>
         <Sidemenu />
+        <div></div>
         <Mainpage />
       </div>
     </div>
