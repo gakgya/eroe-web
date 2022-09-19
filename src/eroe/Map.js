@@ -27,4 +27,6 @@ const Location = () => {
     );
 }
 
+//테스트
+
 export default Location; 
