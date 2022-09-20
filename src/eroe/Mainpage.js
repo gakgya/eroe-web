@@ -1,12 +1,12 @@
 import React from "react";
 import "./css/Mainpage.css";
-import Location from "./Location";
+import Map from "./Map";
 
 function Mainpage() {
   return (
     <div style={{ width: "100%" }}>
       <div className="stand">
-        <div className="map">map</div>
+        <Map/>
         <div className="human">human1</div>
       </div>
       <footer className="call">call</footer>
