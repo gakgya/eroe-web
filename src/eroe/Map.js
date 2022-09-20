@@ -29,14 +29,15 @@ function Map() {
       kakao.maps.load(() => {
         const mapContainer = document.getElementById('map');
         const options = { 
-          center: new kakao.maps.LatLng(37.56000302825312, 126.97540593203321), //좌표설정
+          center: new kakao.maps.LatLng(33.450701, 126.570667), //좌표설정
           level: 3 
         }; 
         const map = new kakao.maps.Map(mapContainer, options); //맵생성
         //마커설정
-        const markerPosition = new kakao.maps.LatLng(37.56000302825312, 126.97540593203321); 
+        const markerPosition = new kakao.maps.LatLng(33.450701, 126.570667); 
         const marker = new kakao.maps.Marker({ 
-          position: markerPosition
+          position: markerPosition,
+          text: '현재위치'
         }); 
         marker.setMap(map); 
       });   
