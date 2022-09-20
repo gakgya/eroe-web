@@ -6,7 +6,7 @@ function Mainpage() {
   return (
     <div style={{ width: "100%" }}>
       <div className="stand">
-        <Location/>
+        <div className="map">map</div>
         <div className="human">human1</div>
       </div>
       <footer className="call">call</footer>
