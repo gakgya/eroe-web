@@ -30,14 +30,14 @@ function Map() {
         const mapContainer = document.getElementById('map');
         const options = { 
           center: new kakao.maps.LatLng(33.450701, 126.570667), //좌표설정
-          level: 3 
+          level: 2 
         }; 
         const map = new kakao.maps.Map(mapContainer, options); //맵생성
         //마커설정
         const markerPosition = new kakao.maps.LatLng(33.450701, 126.570667); 
         const marker = new kakao.maps.Marker({ 
           position: markerPosition,
-          text: '현재위치'
+          title: '현재 위치'
         }); 
         marker.setMap(map); 
       });   
