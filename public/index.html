@@ -14,10 +14,10 @@
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' https://dapi.kakao.com http://*.daumcdn.net; script-src 'self' 'unsafe-inline' https://dapi.kakao.com http://*.daumcdn.net; img-src 'self' 'unsafe-inline' https://dapi.kakao.com http://*.daumcdn.net;">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self' 'unsafe-inline' https://dapi.kakao.com http://*.daumcdn.net; script-src 'self' 'unsafe-inline' https://dapi.kakao.com http://*.daumcdn.net; img-src 'self' 'unsafe-inline' https://dapi.kakao.com http://*.daumcdn.net;">
-
-    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=2cd6772bfd4c7ea69cde577e1cdb1a47"></script>
+    <script
+    type="text/javascript"
+    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2cd6772bfd4c7ea69cde577e1cdb1a47&libraries=services,clusterer"
+    ></script>
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
