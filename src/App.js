@@ -12,7 +12,6 @@ function App() {
         <Sidemenu />
         <div></div>
         <Mainpage />
-        
       </div>
     </div>
   );
