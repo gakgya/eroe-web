@@ -2,7 +2,6 @@ import "./App.css";
 import Topbar from "./eroe/Topbar";
 import React,{useEffect,useState} from 'react';
 import { Route, Switch } from "react-router";
-import Sidemenu from "./eroe/Sidemenu";
 import Loginpage from './eroe/Loginpage';
 import Mainpage from "./eroe/Mainpage";
 
@@ -27,14 +26,7 @@ function App() {
     <div style={{ height: "100vh", overflow: "hidden" }}>
       <Topbar />
       <div style={{ display: "flex", height: "90%" }}>
-        <Sidemenu />
-        <div>
-        {isLoginPage ? 
-      	// Main 컴포넌트 호출 시 isLogin 이라는 props 값을 전달
-        <Mainpage isLoginPage={isLoginPage} /> : 
-        <Loginpage />}
-    </div>
-        
+        <Mainpage />
       </div>
     </div>
   );
