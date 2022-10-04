@@ -8,6 +8,7 @@ function Location() {
   return (
     <Map
       center={{ lat: loc_lat, lng: loc_lng }}
+      level = {1}
       style={{ width: "100%", height: "100%" }}
     >
       <MapMarker position={{ lat: loc_lat, lng: loc_lng }}>
