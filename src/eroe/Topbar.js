@@ -7,7 +7,7 @@ import user from "./img/user.png";
 function Topbar() {
   return (
     <div>
-      <div className="Topbarstyle">
+      <div className="Topbarstyle" style={{position: "relative", zIndex: "2"}}>
       <div>
         <input type="checkbox" id="check_box" />
         <label for="check_box">
@@ -17,9 +17,10 @@ function Topbar() {
         </label>
         <div id="side_menu">
           <ul>
-            <li><a href="#">menu1</a></li>
-            <li><a href="#">menu2</a></li>
-            <li><a href="#">menu3</a></li>
+            <li><a href="#">mypage</a></li>
+            <li><a href="#">사용자 설정</a></li>
+            <li><a href="#">신고하기</a></li>
+            <a href="#">설정</a>
           </ul>
         </div>
       </div>
