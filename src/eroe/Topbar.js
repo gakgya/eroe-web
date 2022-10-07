@@ -1,6 +1,5 @@
 import React from "react";
 import "./css/Topbar.css";
-import menuimg from "./img/menu.png";
 import notifi from "./img/notification.png";
 import user from "./img/user.png";
 
