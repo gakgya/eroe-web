@@ -14,7 +14,7 @@ function User() {
                     onClick={{}}
                 />
             배남길</p>
-            <p>현재 주소</p>
+            <p>현재 주소요</p>
         </div>
     )
 }
