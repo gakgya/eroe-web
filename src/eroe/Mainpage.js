@@ -6,7 +6,7 @@ import Call from "./Call";
 
 function Mainpage(props) {
 
-  const isLoginPage = props.isLoginPage
+  const isLogin = props.isLoginPage
     
   const onLogout = () => {
     	// sessionStorage 에 user_id 로 저장되어있는 아이템을 삭제한다.
