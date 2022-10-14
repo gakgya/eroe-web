@@ -4,6 +4,7 @@ import React from "react";
 function Login() {
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
+  let asd = ""
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
@@ -35,6 +36,7 @@ function Login() {
         console.log(json);
         if (json.login == "True") {
           alert("Login successful");
+          asd = "/mainpage"
         } else {
           alert("Login failed");
         }
