@@ -1,9 +1,12 @@
 import { useState } from "react";
 import React from "react";
+import { Link,useNavigate } from 'react-router-dom';
 
-function Login() {
+function Login(props) {
+  const navigate = useNavigate();
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
+  const [path, setPath] = useState("/");
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
@@ -34,7 +37,10 @@ function Login() {
       .then((json) => {
         console.log(json);
         if (json.login == "True") {
-          alert("Login successful");
+          //setPath("/mainpage")
+          props.getId(id);
+          navigate("/mainpage")
+
         } else {
           alert("Login failed");
         }
@@ -63,12 +69,14 @@ function Login() {
           <input type="password" value={password} onChange={onChangePassword} />
 
           <br />
-          <button type="button" onClick={check}>
-            로그인
-          </button>
-          <button type="button" onClick={OnSignUp}>
-            회원가입
-          </button>
+              <button type="button" onClick={check}>
+                로그인
+              </button>
+          <Link to="/signup">
+            <button type="button" onClick={OnSignUp}>
+              회원가입
+            </button>
+          </Link>
         </form>
       </div>
     </>
