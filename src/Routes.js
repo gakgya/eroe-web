@@ -5,8 +5,8 @@ import {
   Route,
 } from 'react-router-dom';
 
-import Loginpage from './pages/Loginpage/Loginpage';
-import register from './pages/register/register';
+import Login from './pages/Login/Login';
+import Signup from './pages/Signup/Signup';
 import Mainpage from './pages/Mainpage/Mainpage';
 
 class Routes extends React.Component {
@@ -14,8 +14,8 @@ class Routes extends React.Component {
     return (
       <Router>
         <Switch>
-          <Route exact path="/" component={Loginpage} />
-	  <Route exact path="/register" component={register}/> 
+          <Route exact path="/" component={Login} />
+	  <Route exact path="/Signup" component={Signup}/> 
           <Route exact path="/main" component={Mainpage} />
         </Switch>
       </Router>
