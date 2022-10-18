@@ -1,0 +1,53 @@
+.police_button {
+position: absolute;
+width: 269px;
+height: 47px;
+left: 45px;
+top: 134px;
+
+font-family: 'Jua';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 50px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #0038FF;
+
+position: absolute;
+width: 323px;
+height: 163px;
+left: 18px;
+top: 76px;
+
+background: rgba(3, 144, 0, 0.4);
+border-radius: 24px;
+}
+
+.firefighter_button {
+position: absolute;
+width: 269px;
+height: 47px;
+left: 45px;
+top: 337px;
+
+font-family: 'Jua';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 50px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FF0000;
+
+position: absolute;
+width: 323px;
+height: 163px;
+left: 18px;
+top: 279px;
+
+background: rgba(3, 144, 0, 0.4);
+border-radius: 24px;
+}
