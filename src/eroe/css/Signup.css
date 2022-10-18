@@ -199,7 +199,7 @@ background: #FFFFFF;
 border: 1px solid rgba(3, 144, 0, 0.3);
 }
 
-.save_txt {
+.submit_button {
 position: absolute;
 width: 79px;
 height: 27px;
@@ -214,16 +214,12 @@ line-height: 29px;
 display: flex;
 align-items: flex-end;
 text-align: center;
-
 color: #039000;
-}
 
-.save_box {
 position: absolute;
 width: 300px;
 height: 45px;
 left: 31px;
 top: 689px;
-
 background: rgba(3, 144, 0, 0.4);
 }
