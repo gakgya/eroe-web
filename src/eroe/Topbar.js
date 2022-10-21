@@ -2,8 +2,11 @@ import React from "react";
 import "./css/Topbar.css";
 import notifi from "./img/notification.png";
 import user from "./img/user.png";
+import { Link,useNavigate } from 'react-router-dom';
 
 function Topbar() {
+  const navigate = useNavigate();
+
   return (
     <div>
       <div className="Topbarstyle" style={{position: "relative", zIndex: "2"}}>
@@ -26,13 +29,19 @@ function Topbar() {
         <div className="Eroetext">
           <div>eroe</div>
         </div>
-        <img className="topbarimg" id="notifiimg" src={notifi} alt="notifi" />
+        <img 
+          className="topbarimg" 
+          id="notifiimg" 
+          src={notifi} 
+          alt="notifi"
+          onClick={()=>{navigate("/mainpage/notice")}}
+        />
         <img
           className="topbarimg"
           id="userimg"
           src={user}
           alt="user"
-          onClick={{}}
+          onClick={()=>{navigate("/mainpage/mypage")}}
         />
       </div>
     </div>

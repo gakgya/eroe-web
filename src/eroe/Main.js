@@ -2,12 +2,12 @@ import React from "react";
 import { Router, Routes, Route, Switch, Link, BrowserRouter ,useNavigate} from "react-router-dom";
 import Topbar from "./Topbar";
 import Mainpage from "./Mainpage";
-import * as Session from "./exportjs/Session.js";
+import Mypage from "./Mypage";
+import Notice from "./Notice";
 
 function Main(props){
     const navigate = useNavigate();
     function check(){
-        var ck_login = "False"
         const idpost = {
             se_id: props.id,
           };
@@ -22,7 +22,7 @@ function Main(props){
             .then((json) => {
               console.log(json);
               if (json.login == "True") {
-                console.log(ck_login)
+                console.log("")
               } else {
                 navigate("/")
               }
@@ -34,9 +34,13 @@ function Main(props){
             <div>
                 <div style={{ height: "100vh", overflow: "hidden" }}>
                     <Topbar />
-                        <div style={{ display: "flex", height: "90%" }}>
-                        <Mainpage getId = {props.getId}/>
-                    </div>
+                          <div style={{ display: "flex", height: "90%" }}>
+                          <Routes>
+                            <Route path="/mainpage/main" element={<Mainpage />}></Route>
+                            <Route path="/mainpage/mypage" element={<Mypage getId = {props.id}/>}></Route>
+                            <Route path="/mainpage/notice" element={<Notice />}></Route>
+                          </Routes>                          
+                          </div>
                 </div>
             </div>
         </div>

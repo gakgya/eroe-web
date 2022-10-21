@@ -8,7 +8,6 @@ import Signup from './eroe/Signup'
 import NotFound from './eroe/NotFound';
 import Main from "./eroe/Main"
 
-
 function App() {
   const [loginid,setLoginId] = useState("")
   const getId = (text) =>{
@@ -20,7 +19,7 @@ function App() {
       <BrowserRouter>
 				  <Routes>
             <Route path="/" element={<Login getId = {getId}/>}></Route>
-            <Route path="/mainpage" element={<Main id = {loginid} getId = {getId}/>}></Route>
+            <Route path="/mainpage/*" element={<Main id = {loginid} getId = {getId}/>}></Route>
             <Route path="/signup" element={<Signup />}></Route>
 				    <Route path="*" element={<NotFound />}></Route> */
 				  </Routes>

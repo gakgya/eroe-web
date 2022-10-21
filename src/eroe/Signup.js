@@ -37,6 +37,7 @@ function Signup() {
     const post = {
       post_id: id,
       post_password: password,
+      post_passwordConfirm: passwordConfirm,
       post_name: name,
       post_email: email,
       post_phone: phone,

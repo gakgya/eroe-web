@@ -40,7 +40,7 @@ function Login(props) {
         if (json.login == "True") {
           //setPath("/mainpage")
           props.getId(id);
-          navigate("/mainpage")
+          navigate("/mainpage/main")
 
         } else {
           alert("Login failed");
