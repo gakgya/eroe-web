@@ -6,6 +6,11 @@ function Location() {
   const [loc_lng, setLoc_lng] = useState(126.79581);
   const text = "현재위치";
 
+  setInterval( () => {
+    setLoc_lat(37.4482);
+    setLoc_lng(127.1694);
+  }, 1000)
+
   return (
     <Map
       center={{ lat: loc_lat, lng: loc_lng }}
