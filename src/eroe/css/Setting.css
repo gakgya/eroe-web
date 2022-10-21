@@ -1,0 +1,49 @@
+.setting_button {
+position: absolute;
+width: 360px;
+height: 55px;
+left: 0px;
+top: 55px;
+
+background: rgba(3, 144, 0, 0.4);
+}
+
+.notice_button {
+position: absolute;
+width: 360px;
+height: 55px;
+left: 0px;
+top: 110px;
+
+background: rgba(3, 144, 0, 0.2);
+}
+
+.version_button {
+position: absolute;
+width: 360px;
+height: 55px;
+left: 0px;
+top: 165px;
+
+background: rgba(3, 144, 0, 0.4);
+}
+
+.notice_setting_button {
+position: absolute;
+width: 360px;
+height: 55px;
+left: 0px;
+top: 220px;
+
+background: rgba(3, 144, 0, 0.2);
+}
+
+.service_center_button {
+position: absolute;
+width: 360px;
+height: 55px;
+left: 0px;
+top: 275px;
+
+background: rgba(3, 144, 0, 0.4);
+}

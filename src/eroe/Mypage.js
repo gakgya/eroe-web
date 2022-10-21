@@ -1,6 +1,7 @@
 import React from "react";
 import "./css/Mainpage.css";
 import user from "./img/user.png";
+import "./css/Mypage.css";
 
 function Mypage() {
   return (
