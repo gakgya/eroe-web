@@ -34,7 +34,7 @@ app.post("/idplz", (req, res) => {
   connection.query(
     "INSERT INTO user (User_ID, User_Password, User_Name, User_Birth, User_Phonenum, User_Email) values (?,?,?,?,?,?)",
     [id, password, name, birth, phone, email],
-    function(err, rows, fields) {
+    function (err, rows, fields) {
       if (err) {
         console.log("실패");
         console.log(err);
@@ -49,7 +49,7 @@ app.post("/idplz", (req, res) => {
 app.post("/callbody", (req, res) => {
   const check_id = req.body.check_id;
   var ck = 0;
-  connection.query("SELECT * FROM user ", function(err, rows, fields) {
+  connection.query("SELECT * FROM user ", function (err, rows, fields) {
     if (err) {
       console.log("불러오기 실패");
     } else {
@@ -78,7 +78,7 @@ app.post("/login", (req, res) => {
   var login = 0;
 
   console.log(req.body);
-  connection.query("SELECT * FROM user ", function(err, rows, fields) {
+  connection.query("SELECT * FROM user ", function (err, rows, fields) {
     if (err) {
       console.log("불러오기 실패");
     } else {
@@ -117,7 +117,7 @@ app.post("/session", (req, res) => {
   var login = 0;
 
   console.log(req.body);
-  connection.query("SELECT * FROM user", function(err, rows, fields) {
+  connection.query("SELECT * FROM user", function (err, rows, fields) {
     if (err) {
       console.log("불러오기 실패");
     } else {
@@ -147,12 +147,31 @@ app.post("/logout", (req, res) => {
   connection.query(
     "UPDATE user SET Login_State = 'False' WHERE User_ID = (?)",
     [check_id],
-    function(err, rows, fields) {
+    function (err, rows, fields) {
       if (err) {
         console.log("불러오기 실패");
       } else {
         console.log("불러오기 성공");
         res.send({ out: "logout" });
+      }
+    }
+  );
+});
+
+app.post("/locate", (req, res) => {
+  console.log(req.body);
+  connection.query(
+    "SELECT * FROM ttable ORDER BY incre DESC LIMIT 1",
+    function (err, rows, fields) {
+      if (err) {
+        console.log("불러오기 실패");
+      } else {
+        console.log(rows[0].loc_latitude, rows[0].loc_longtitude);
+        console.log("불러오기 성공");
+        res.send({
+          loc_latitude: rows[0].loc_latitude,
+          loc_longtitude: rows[0].loc_longtitude,
+        });
       }
     }
   );

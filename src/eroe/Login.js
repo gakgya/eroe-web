@@ -1,6 +1,6 @@
 import { useState } from "react";
 import React from "react";
-import { Link,useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from "react-router-dom";
 import "./css/Login.css";
 
 function Login(props) {
@@ -40,8 +40,7 @@ function Login(props) {
         if (json.login == "True") {
           //setPath("/mainpage")
           props.getId(id);
-          navigate("/mainpage/main")
-
+          navigate("/mainpage/main");
         } else {
           alert("Login failed");
         }
@@ -70,9 +69,9 @@ function Login(props) {
           <input type="password" value={password} onChange={onChangePassword} />
 
           <br />
-              <button type="button" onClick={check}>
-                로그인
-              </button>
+          <button type="button" onClick={check}>
+            로그인
+          </button>
           <Link to="/signup">
             <button type="button" onClick={OnSignUp}>
               회원가입

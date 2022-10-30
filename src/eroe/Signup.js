@@ -1,6 +1,6 @@
 import { useState } from "react";
 import React from "react";
-import "./css/Signup.css";
+//import "./css/Signup.css";
 
 function Signup() {
   const [id, setId] = useState("");
@@ -72,30 +72,33 @@ function Signup() {
       <h3 className="signup_txt">회원가입</h3>
       <div>
         <div>
-          <label className="id_txt">아이디</label> <br />
-          <input onChange={onChangeId} className="id_box" />
+          <label /* className="id_txt"*/>아이디</label> <br />
+          <input onChange={onChangeId} /* className="id_box" */ />
           <button onClick={onCall}>ID확인</button>
           <p>{idcheck}</p>
         </div>
 
         <div>
-          <label className="password_txt">비밀번호</label> <br />
-          <input onChange={onChangePassword} className="password_box"/>
+          <label /*className="password_txt"*/>비밀번호</label> <br />
+          <input onChange={onChangePassword} /*className="password_box"*/ />
           <p>3</p>
         </div>
         <div>
           <label className="passwordconfirm_txt">비밀번호 확인</label> <br />
-          <input onChange={onChangePasswordConfirm} className="passwordconfirm_box"/>
+          <input
+            onChange={onChangePasswordConfirm}
+            className="passwordconfirm_box"
+          />
           <p></p>
         </div>
         <div>
           <label className="name_txt">이름</label> <br />
-          <input onChange={onChangeName} className="name_box"/>
+          <input onChange={onChangeName} className="name_box" />
           <p>{name}</p>
         </div>
         <div>
           <label className="email_txt">이메일</label> <br />
-          <input onChange={onChangeEmail} className="email_box"/>
+          <input onChange={onChangeEmail} className="email_box" />
           <p>1</p>
         </div>
         <div>
@@ -105,12 +108,14 @@ function Signup() {
         </div>
         <div>
           <label className="birth_txt">생년월일</label> <br />
-          <input onChange={onChangeBirth} className="birth_box"/>
+          <input onChange={onChangeBirth} className="birth_box" />
           <p>2</p>
         </div>
         <br />
         <br />
-        <button onClick={submit} className="sumbit_button">저장</button>
+        <button onClick={submit} className="sumbit_button">
+          저장
+        </button>
       </div>
     </>
   );
