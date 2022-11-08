@@ -103,3 +103,11 @@
   text-align: center;
   border: none;
 }
+#find {
+  display: flex;
+  color: #039000;
+}
+
+.find-btn {
+  margin-right: 5px;
+}
