@@ -1,111 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap");
+
+.Topbarstyle {
+  width: 100%;
+  background-color: #ffffff;
+  height: 55px;
+  border-bottom: 1px solid rgba(3, 144, 0, 0.3);
+  display: flex;
+}
+
+.Eroetext {
+  width: 372px;
+  margin: auto;
+  margin-top: -5px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  color: #039000;
+  align-items: flex-end;
+  font-family: "Kaisei HarunoUmi", serif;
+}
+
+.input_standard {
+  width: 90%;
+  height: 100%;
+  margin: 85px auto 0 auto;
+}
+
 .id_txt {
-position: absolute;
-width: 79px;
-height: 27px;
-left: 30px;
-top: 140px;
+  width: 100%;
+  height: 27px;
 
-font-family: 'Kaisei HarunoUmi';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 29px;
-display: flex;
-align-items: flex-end;
+  font-family: "Kaisei HarunoUmi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 29px;
+  display: flex;
+  align-items: flex-end;
 
-color: #039000;
+  color: #039000;
 }
 
 .id_box {
-box-sizing: border-box;
-position: absolute;
-width: 300px;
-height: 45px;
-left: 30px;
-top: 167px;
-
-background: #FFFFFF;
-border: 1px solid rgba(3, 144, 0, 0.3);
+  box-sizing: border-box;
+  width: 100%;
+  height: 45px;
+  margin: 4px auto;
+  background: #ffffff;
+  border: 1px solid rgba(3, 144, 0, 0.3);
 }
 
 .password_txt {
-position: absolute;
-width: 79px;
-height: 27px;
-left: 30px;
-top: 212px;
+  width: 100%;
+  height: 27px;
 
-font-family: 'Kaisei HarunoUmi';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 29px;
-display: flex;
-align-items: flex-end;
+  margin-top: 10px;
+  font-family: "Kaisei HarunoUmi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 29px;
+  display: flex;
+  align-items: flex-end;
 
-color: #039000;
+  color: #039000;
 }
 
 .password_box {
-box-sizing: border-box;
-position: absolute;
-width: 300px;
-height: 45px;
-left: 30px;
-top: 239px;
-
-background: #FFFFFF;
-border: 1px solid rgba(3, 144, 0, 0.3);
+  box-sizing: border-box;
+  width: 100%;
+  height: 45px;
+  margin: 4px auto;
+  background: #ffffff;
+  border: 1px solid rgba(3, 144, 0, 0.3);
 }
 
 .login_button {
-position: absolute;
-width: 79px;
-height: 27px;
-left: 140px;
-top: 364px;
-
-font-family: 'Kaisei HarunoUmi';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 29px;
-display: flex;
-align-items: flex-end;
-text-align: center;
-color: #039000;
-
-position: absolute;
-width: 300px;
-height: 45px;
-left: 31px;
-top: 354px;
-
-background: rgba(3, 144, 0, 0.4);
+  width: 100%;
+  height: 45px;
+  margin: 4px auto;
+  margin-top: 20px;
+  background: rgba(3, 144, 0, 0.4);
+  color: #039000;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  padding-top: 5px;
+  text-align: center;
+  border: none;
 }
 
 .signup_button {
-position: absolute;
-width: 79px;
-height: 27px;
-left: 140px;
-top: 418px;
-
-font-family: 'Kaisei HarunoUmi';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 29px;
-display: flex;
-align-items: flex-end;
-text-align: center;
-color: #039000;
-
-position: absolute;
-width: 300px;
-height: 45px;
-left: 31px;
-top: 410px;
-
-background: rgba(3, 144, 0, 0.2);
+  width: 100%;
+  height: 45px;
+  margin: 4px auto;
+  background: rgba(3, 144, 0, 0.2);
+  color: #039000;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  padding-top: 5px;
+  text-align: center;
+  border: none;
 }

@@ -7,7 +7,6 @@ function Login(props) {
   const navigate = useNavigate();
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
-  const [path, setPath] = useState("/");
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
@@ -38,7 +37,6 @@ function Login(props) {
       .then((json) => {
         console.log(json);
         if (json.login == "True") {
-          //setPath("/mainpage")
           props.getId(id);
           navigate("/mainpage/main");
         } else {
@@ -49,35 +47,45 @@ function Login(props) {
 
   return (
     <>
-      <h2>로그인 창</h2>
+      <div className="Topbarstyle">
+        <div className="Eroetext">eroe</div>
+      </div>
       <div
         style={{
           display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
           width: "100%",
-          height: "100vh",
+          height: "100%",
+          flexDirection: "column",
         }}
       >
-        <form
-          style={{ display: "flex", flexDirection: "column" }}
-          onSubmit={onSubmitHandler}
-        >
-          <label>Email</label>
-          <input type="id" value={id} onChange={onChangeId} />
-          <label>Password</label>
-          <input type="password" value={password} onChange={onChangePassword} />
-
-          <br />
-          <button type="button" onClick={check}>
+        <div className="input_standard">
+          <label className="id_txt">아이디</label>
+          <input
+            className="id_box"
+            type="id"
+            value={id}
+            onChange={onChangeId}
+          />
+          <label className="password_txt">비밀번호</label>
+          <input
+            className="password_box"
+            type="password"
+            value={password}
+            onChange={onChangePassword}
+          />
+          <div>
+            <div>아이디 찾기</div>
+            <div>비밀번호 찾기</div>
+          </div>
+          <button className="login_button" onClick={check}>
             로그인
-          </button>
+          </button>{" "}
           <Link to="/signup">
-            <button type="button" onClick={OnSignUp}>
+            <button className="signup_button" onClick={OnSignUp}>
               회원가입
             </button>
           </Link>
-        </form>
+        </div>
       </div>
     </>
   );
