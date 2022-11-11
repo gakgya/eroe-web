@@ -32,24 +32,40 @@ function Mypage(props) {
 
   return (
     <div>
-      <div className ='bkg'>
-        <p>
-          
+      <div className ='standard'>
+        <div className = 'user_box'>
+       
+       <div>
             <img
-              className="Userimg"
+              className="user_name"
               id="userimg"
               align="left"
               src={user}
               alt="user"
-              onClick={{}}
+              onClick={{}}     
             />
-          배길남
-          </p>
-        </div>
-        <button type="button" onClick={onLogout}>
+          <div className = 'user_nickname'> shiproadman
+         </div>
+         </div>
+
+<div className = 'buttonbox'>
+         <button type ='button' onClick ={onLogout} className ='user_info'>
+          내 정보수정
+         </button>
+        
+
+         <button type="button" onClick={onLogout} className = 'user_logoutbox' color = ''>
           Logout
-        </button>
-      </div>
+        </button>  
+        </div>
+     
+        </div>          
+          </div>
+          </div>
+       
+        
+    
+    
     
   );
 }
