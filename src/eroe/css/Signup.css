@@ -1,94 +1,107 @@
+.signup_style{
+    width : 100%;
+    height : 130px;
+
+}
+.topb{
+    width: 100%;
+    background-color: #ffffff;
+    height: 55px;
+    border-bottom: 1px solid rgba(3, 144, 0, 0.3);
+    display: flex;
+}
+.ero{
+    width: 372px;
+  margin: auto;
+  margin-top: -5px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  color: #039000;
+  align-items: flex-end;
+  font-family: "Kaisei HarunoUmi", serif;
+
+}
+
 .signup_txt {
-position: absolute;
-width: 102px;
+
+width: 100%;
 height: 27px;
-left: 7px;
-top: 79px;
+left : 7px;
 
 font-family: 'Kaisei HarunoUmi';
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
+font-size: 35px;
 line-height: 29px;
 display: flex;
-align-items: flex-end;
-text-align: center;
 
 color: #039000;
 }
+.standard{
+    width: 90%;
+    height: 100%;
+    margin: 70px auto 0 auto;
+}
 
-.id_txt {
-position: absolute;
-width: 79px;
-height: 27px;
-left: 31px;
-top: 123px;
-
+.sgid_txt {
+width: 100%;
+height: 25px;
 font-family: 'Kaisei HarunoUmi';
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
-line-height: 29px;
-display: flex;
-align-items: flex-end;
-
-color: #039000;
-}
-
-.id_box {
-box-sizing: border-box;
-position: absolute;
-width: 300px;
-height: 45px;
-left: 30px;
-top: 150px;
-
-background: #FFFFFF;
-border: 1px solid rgba(3, 144, 0, 0.3);
-}
-
-.password_txt {
-position: absolute;
-width: 79px;
-height: 27px;
-left: 30px;
-top: 195px;
-
-font-family: 'Kaisei HarunoUmi';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 29px;
+font-size: 30px;
+line-height: 0;
 display: flex;
 align-items: flex-end;
 
 color: #039000;
 }
 
-.password_box {
-box-sizing: border-box;
-position: absolute;
-width: 300px;
-height: 45px;
-left: 30px;
-top: 222px;
-
-background: #FFFFFF;
-border: 1px solid rgba(3, 144, 0, 0.3);
+.sgid_box {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    margin: 4px auto;
+    background: #ffffff;
+    border: 1px solid rgba(3, 144, 0, 0.3);
 }
+
+.sgpassword_txt {
+
+width: 100%;
+height: 25px;
+font-family: 'Kaisei HarunoUmi';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 0;
+display: flex;
+align-items: flex-end;
+
+color: #039000;
+}
+
+.sgpassword_box {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    background: #ffffff;
+    border: 1px solid rgba(3, 144, 0, 0.3);
+  }
+
 
 .passwordconfirm_txt {
-position: absolute;
-width: 121px;
-height: 27px;
-left: 30px;
-top: 267px;
+
+width: 100%;
+height: 25px;
+
 
 font-family: 'Kaisei HarunoUmi';
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
-line-height: 29px;
+font-size: 30px;
+line-height: 0;
 display: flex;
 align-items: flex-end;
 
@@ -96,30 +109,27 @@ color: #039000;
 }
 
 .passwordconfirm_box {
-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    margin: 4px auto;
+    background: #ffffff;
+    border: 1px solid rgba(3, 144, 0, 0.3);
+  }
 
-position: absolute;
-width: 300px;
-height: 45px;
-left: 30px;
-top: 294px;
-
-background: #FFFFFF;
-border: 1px solid rgba(3, 144, 0, 0.3);
-}
 
 .email_txt {
-position: absolute;
-width: 121px;
-height: 27px;
+
+width: 100%;
+height: 25px;
 left: 31px;
 top: 339px;
 
 font-family: 'Kaisei HarunoUmi';
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
-line-height: 29px;
+font-size: 30px;
+line-height: 0;
 display: flex;
 align-items: flex-end;
 
@@ -127,99 +137,110 @@ color: #039000;
 }
 
 .email_box {
-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    margin: 4px auto;
+    background: #ffffff;
+    border: 1px solid rgba(3, 144, 0, 0.3);
+  }
 
-position: absolute;
-width: 300px;
-height: 45px;
-left: 30px;
-top: 366px;
 
-background: #FFFFFF;
-border: 1px solid rgba(3, 144, 0, 0.3);
-}
+.birth_txt {
 
-.address_txt {
-position: absolute;
-width: 121px;
-height: 27px;
-left: 31px;
-top: 413px;
+width: 100%;
+height: 25px;
+
 
 font-family: 'Kaisei HarunoUmi';
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
-line-height: 29px;
+font-size: 30px;
+line-height: 0;
 display: flex;
 align-items: flex-end;
 
 color: #039000;
 }
 
-.address_box {
-box-sizing: border-box;
-position: absolute;
-width: 300px;
-height: 45px;
-left: 30px;
-top: 438px;
+.birth_box {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    margin: 4px auto;
+    background: #ffffff;
+    border: 1px solid rgba(3, 144, 0, 0.3);
+  }
 
-background: #FFFFFF;
-border: 1px solid rgba(3, 144, 0, 0.3);
-}
 
-.name_txt {
-position: absolute;
-width: 121px;
-height: 27px;
+.phone_txt {
+
+width: 100%;
+height: 25px;
 left: 31px;
 top: 485px;
 
 font-family: 'Kaisei HarunoUmi';
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
-line-height: 29px;
+font-size: 30px;
+line-height: 0;
 display: flex;
 align-items: flex-end;
 
 color: #039000;
 }
+
+.phone_box {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    margin: 4px auto;
+    background: #ffffff;
+    border: 1px solid rgba(3, 144, 0, 0.3);
+  }
+    
+.name_txt {
+
+    width: 100%;
+    height: 25px;
+    
+    font-family: 'Kaisei HarunoUmi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 0;
+    display: flex;
+    align-items: flex-end;
+    
+    color: #039000;
+    }
 
 .name_box {
-box-sizing: border-box;
-position: absolute;
-width: 300px;
-height: 45px;
-left: 30px;
-top: 510px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    margin: 4px auto;
+    background: #ffffff;
+    border: 1px solid rgba(3, 144, 0, 0.3);
+  }
 
-background: #FFFFFF;
-border: 1px solid rgba(3, 144, 0, 0.3);
+
+.sub_button {
+
+    width: 100%;
+    height: 45px;
+    margin: 4px auto;
+    background: rgba(3, 144, 0, 0.2);
+    color: #039000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    padding-top: 5px;
+    text-align: center;
+    border: none;
 }
-
-.submit_button {
-position: absolute;
-width: 79px;
-height: 27px;
-left: 141px;
-top: 697px;
-
-font-family: 'Kaisei HarunoUmi';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 29px;
-display: flex;
-align-items: flex-end;
-text-align: center;
-color: #039000;
-
-position: absolute;
-width: 300px;
-height: 45px;
-left: 31px;
-top: 689px;
-background: rgba(3, 144, 0, 0.4);
+.center{
+	width: 110px; 
+	margin: 0 auto;
 }
