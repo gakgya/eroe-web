@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 function Mypage(props) {
   const navigate = useNavigate("");
+  
   function onLogout() {
     const post = {
       out_id: props.id,
@@ -21,7 +22,7 @@ function Mypage(props) {
       .then((json) => {
         console.log(json);
         if (json.out == "logout") {
-          props.getId("");
+          // props.getId();
           navigate("/");
         } else {
           alert("Logout failed");
@@ -42,10 +43,9 @@ function Mypage(props) {
               alt="user"
               onClick={{}}
             />
-            사용자
+          배길남
           </p>
         </div>
-
         <button type="button" onClick={onLogout}>
           Logout
         </button>
