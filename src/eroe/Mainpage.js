@@ -19,7 +19,9 @@ function Mainpage() {
       </div>
       <footer className="call">
         긴급 전화 번호
-        <button className="user_add_button">사용자 추가</button>
+        <button className="user_add_button" onClick={() => {
+          navigate("/mainpage/adduser");
+        }}> 사용자 추가</button>
         <button className="report_button" onClick={() => {
             navigate("/mainpage/report");
           }}> 신고하기</button>
