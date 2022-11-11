@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 function Mypage(props) {
   const navigate = useNavigate("");
-  
+
   function onLogout() {
     const post = {
       out_id: props.id,
@@ -32,10 +32,9 @@ function Mypage(props) {
 
   return (
     <div>
-      <div className ='standard'>
-        <div className = 'user_box'>
-       
-       <div>
+      <div className ='bkg'>
+        <p>
+          
             <img
               className="user_name"
               id="userimg"
@@ -44,28 +43,13 @@ function Mypage(props) {
               alt="user"
               onClick={{}}     
             />
-          <div className = 'user_nickname'> shiproadman
-         </div>
-         </div>
-
-<div className = 'buttonbox'>
-         <button type ='button' onClick ={onLogout} className ='user_info'>
-          내 정보수정
-         </button>
-        
-
-         <button type="button" onClick={onLogout} className = 'user_logoutbox' color = ''>
-          Logout
-        </button>  
+          배길남
+          </p>
         </div>
-     
-        </div>          
-          </div>
-          </div>
-       
-        
-    
-    
+        <button type="button" onClick={onLogout}>
+          Logout
+        </button>
+      </div>
     
   );
 }

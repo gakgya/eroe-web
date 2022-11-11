@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import React from "react";
 import "./css/Adduser.css";
-import {Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Adduser() {
     const navigate = useNavigate();
@@ -60,35 +60,40 @@ function Adduser() {
             navigate("/");
         }
     }
+
     return (
         <>
         <h3 className="adduser_txt">사용자 추가</h3>
-        <div>
+        <div className = 'adduser_standard'>
+
             <div>
-                <label className="name_txt">이름</label> <br />
-                <input onChange={onChangeName} className="name_box" />
+                <div>
+                    <label className="name_txt">이름</label> <br />
+                    <input onChange={onChangeName} className="name_box" />
                 </div>
-            <div>
-                <label className="birth_txt">생년월일</label> <br />
-                <input onChange={onChangeBirth} className="birth_box" />
+                <div>
+                    <label className="birth_txt">생년월일</label> <br />
+                    <input onChange={onChangeBirth} className="birth_box" />
                 </div>
-            <div>
-                <label className="sex_txt">성별</label> <br />
-                <input onChange={onChangeSex} className="sex_box" />
+                <div>
+                    <label className="sex_txt">성별</label> <br />
+                    <input onChange={onChangeSex} className="sex_box" />
                 </div>
-            <div>
-                <label className="phone_txt">전화번호</label> <br />
-                <input onChange={onChangePhone} className="phone_box" />
+                <div>
+                    <label className="phone_txt">전화번호</label> <br />
+                    <input onChange={onChangePhone} className="phone_box" />
                 </div>
-            <div>
-                <label className="addresss_txt">주소</label> <br />
-                <input onChange={onChangeAddress} className="address_box" />
+                <div>
+                    <label className="address_txt">주소</label> <br />
+                    <input onChange={onChangeAddress} className="address_box" />
                 </div>
-            <button onClick={submit} className="submit_button">
-                저장
-            </button>
+                <button onClick={submit} className="submit_button">
+                    저장
+                </button>
             </div>
-            </>
+
+        </div>
+    </>
     );
 }
 
