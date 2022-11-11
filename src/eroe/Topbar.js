@@ -14,7 +14,7 @@ function Topbar() {
         style={{ position: "relative", zIndex: "2" }}
       >
         <div>
-          <input type="checkbox" id="check_box" />
+          <input type="checkbox" id="check_box"/>
           <label htmlFor="check_box">
             <span></span>
             <span></span>

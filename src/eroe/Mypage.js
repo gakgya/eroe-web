@@ -2,10 +2,10 @@ import React from "react";
 import "./css/Mainpage.css";
 import user from "./img/user.png";
 import "./css/Mypage.css";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Mypage(props) {
-  const navigate = useNavigate("")
+  const navigate = useNavigate("");
   function onLogout() {
     const post = {
       out_id: props.id,
@@ -22,29 +22,41 @@ function Mypage(props) {
         console.log(json);
         if (json.out == "logout") {
           props.getId("");
-          navigate("/")
+          navigate("/");
         } else {
-          alert("Login failed");
+          alert("Logout failed");
         }
       });
   }
 
   return (
+<<<<<<< HEAD
     <div>
       <div className ='bkg'>
         <p>
           
+=======
+    <div id="standard">
+      <div className="user_box">
+        <div className="user_name">
+          <p>
+>>>>>>> d69a861e4ae30609fb32ceb5ac6846effc1208a4
             <img
-                className="Userimg"
-                id="userimg"
-                align="left"
-                src={user}
-                alt="user"
-                onClick={{}}
+              className="Userimg"
+              id="userimg"
+              align="left"
+              src={user}
+              alt="user"
+              onClick={{}}
             />
-        사용자</p>
+            사용자
+          </p>
+        </div>
 
-        <button type='button' onClick={onLogout}>Logout</button>
+        <button type="button" onClick={onLogout}>
+          Logout
+        </button>
+      </div>
     </div>
     </div>
   );

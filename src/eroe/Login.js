@@ -73,9 +73,9 @@ function Login(props) {
             value={password}
             onChange={onChangePassword}
           />
-          <div>
-            <div>아이디 찾기</div>
-            <div>비밀번호 찾기</div>
+          <div id="find">
+            <div className="find-btn">아이디 찾기</div>
+            <div className="find-btn">비밀번호 찾기</div>
           </div>
           <button className="login_button" onClick={check}>
             로그인

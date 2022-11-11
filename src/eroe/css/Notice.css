@@ -1,0 +1,10 @@
+.notice {
+ border-bottom: 1px solid #039000;
+ width: 100%;
+ padding-bottom: 10px;
+}
+
+.standard {
+    width: 100%;
+    height: 100%;
+}

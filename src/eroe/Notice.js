@@ -1,22 +1,15 @@
 import React from "react";
-import "./css/Mainpage.css";
-import user from "./img/user.png";
-import "./css/Mypage.css";
+import "./css/Notice.css";
 
-function Mypage() {
+function Notice() {
   return (
-    <div>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <p>알림</p>
+    <div className="standard">
+        <p className="notice">알림</p>
+        <p>배남길님이 외출하셨습니다.</p>
+        <p>배남길님이 복귀하셨습니다.</p>
+        <p>배남길님이 외출하셨습니다.</p>
     </div>
   );
 }
 
-export default Mypage;
+export default Notice;
