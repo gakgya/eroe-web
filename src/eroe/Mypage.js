@@ -33,17 +33,15 @@ function Mypage(props) {
     <div id="standard">
       <div className="user_box">
         <div className="user_name">
-          <p>
-            <img
-              className="Userimg"
-              id="userimg"
-              align="left"
-              src={user}
-              alt="user"
-              onClick={{}}
-            />
-            사용자
-          </p>
+          <img
+            className="Userimg"
+            id="userimg"
+            align="left"
+            src={user}
+            alt="user"
+            onClick={{}}
+          />
+          사용자
         </div>
 
         <button type="button" onClick={onLogout}>

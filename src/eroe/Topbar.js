@@ -14,25 +14,45 @@ function Topbar() {
         style={{ position: "relative", zIndex: "2" }}
       >
         <div>
-          <input type="checkbox" id="check_box"/>
+          <input type="checkbox" id="check_box" />
           <label htmlFor="check_box">
             <span></span>
             <span></span>
             <span></span>
           </label>
           <div id="side_menu">
-            <ul>
-              <li>
-                <a href="#">mypage</a>
-              </li>
-              <li>
-                <a href="#">사용자 설정</a>
-              </li>
-              <li>
-                <a href="#">신고하기</a>
-              </li>
-              <a href="#">설정</a>
-            </ul>
+            <div
+              className="side_odd"
+              onClick={() => {
+                navigate("/mainpage/mypage");
+              }}
+            >
+              mypage
+            </div>
+            <div
+              className="side_even"
+              onClick={() => {
+                navigate("/mainpage/notice");
+              }}
+            >
+              사용자 설정
+            </div>
+            <div
+              className="side_odd"
+              onClick={() => {
+                navigate("/mainpage/report");
+              }}
+            >
+              신고하기
+            </div>
+            <div
+              className="side_even"
+              onClick={() => {
+                navigate("/mainpage/setting");
+              }}
+            >
+              설정
+            </div>
           </div>
         </div>
         <div className="Eroetext">

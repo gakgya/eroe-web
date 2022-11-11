@@ -10,6 +10,9 @@
   margin-top: 6px;
 }
 .user_name {
+  width: 103px;
+  height: 103px;
   background: rgba(3, 144, 0, 0.4);
   border-radius: 50px;
+  margin: auto 0px auto 0px;
 }
