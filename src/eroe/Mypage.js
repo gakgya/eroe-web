@@ -31,7 +31,9 @@ function Mypage(props) {
 
   return (
     <div>
+      <div className ='bkg'>
         <p>
+          
             <img
                 className="Userimg"
                 id="userimg"
@@ -43,6 +45,7 @@ function Mypage(props) {
         사용자</p>
 
         <button type='button' onClick={onLogout}>Logout</button>
+    </div>
     </div>
   );
 }

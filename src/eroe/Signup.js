@@ -120,9 +120,10 @@ function Signup() {
       <div className = 'ero'>eroe</div>
       
     </div>
+    <h3 className="signup_txt">회원가입</h3>
     <div className = 'standard'>
     
-      <h3 className="signup_txt">회원가입</h3>
+     
    
       <div>
         <div>

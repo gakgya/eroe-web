@@ -1,8 +1,4 @@
-.signup_style{
-    width : 100%;
-    height : 130px;
 
-}
 .topb{
     width: 100%;
     background-color: #ffffff;
@@ -28,6 +24,7 @@
 width: 100%;
 height: 27px;
 left : 7px;
+margin-left: 25px;
 
 font-family: 'Kaisei HarunoUmi';
 font-style: normal;
@@ -39,9 +36,9 @@ display: flex;
 color: #039000;
 }
 .standard{
-    width: 90%;
+    width: 80%;
     height: 100%;
-    margin: 70px auto 0 auto;
+    margin: 35px auto 0 auto;
 }
 
 .sgid_txt {
@@ -50,7 +47,7 @@ height: 25px;
 font-family: 'Kaisei HarunoUmi';
 font-style: normal;
 font-weight: 400;
-font-size: 30px;
+font-size: 25px;
 line-height: 0;
 display: flex;
 align-items: flex-end;
@@ -74,7 +71,7 @@ height: 25px;
 font-family: 'Kaisei HarunoUmi';
 font-style: normal;
 font-weight: 400;
-font-size: 30px;
+font-size: 25px;
 line-height: 0;
 display: flex;
 align-items: flex-end;
@@ -100,7 +97,7 @@ height: 25px;
 font-family: 'Kaisei HarunoUmi';
 font-style: normal;
 font-weight: 400;
-font-size: 30px;
+font-size: 25px;
 line-height: 0;
 display: flex;
 align-items: flex-end;
@@ -128,7 +125,7 @@ top: 339px;
 font-family: 'Kaisei HarunoUmi';
 font-style: normal;
 font-weight: 400;
-font-size: 30px;
+font-size: 25px;
 line-height: 0;
 display: flex;
 align-items: flex-end;
@@ -155,7 +152,7 @@ height: 25px;
 font-family: 'Kaisei HarunoUmi';
 font-style: normal;
 font-weight: 400;
-font-size: 30px;
+font-size: 25px;
 line-height: 0;
 display: flex;
 align-items: flex-end;
@@ -183,7 +180,7 @@ top: 485px;
 font-family: 'Kaisei HarunoUmi';
 font-style: normal;
 font-weight: 400;
-font-size: 30px;
+font-size: 25px;
 line-height: 0;
 display: flex;
 align-items: flex-end;
@@ -208,7 +205,7 @@ color: #039000;
     font-family: 'Kaisei HarunoUmi';
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 0;
     display: flex;
     align-items: flex-end;
