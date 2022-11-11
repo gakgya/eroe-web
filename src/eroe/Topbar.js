@@ -4,6 +4,8 @@ import notifi from "./img/notification.png";
 import user from "./img/user.png";
 import { Link, useNavigate } from "react-router-dom";
 
+
+
 function Topbar() {
   const navigate = useNavigate();
 
@@ -55,7 +57,9 @@ function Topbar() {
             </div>
           </div>
         </div>
-        <div className="Eroetext">
+        <div className="Eroetext"onClick = {()=> {
+          navigate('/mainpage/main')
+        }}>
           <div>eroe</div>
         </div>
         <img

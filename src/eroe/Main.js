@@ -12,6 +12,7 @@ import Topbar from "./Topbar";
 import Mainpage from "./Mainpage";
 import Mypage from "./Mypage";
 import Notice from "./Notice";
+import Report from "./Report";
 
 function Main(props) {
   const navigate = useNavigate();
@@ -41,11 +42,12 @@ function Main(props) {
     <div>
       <div style={{ height: "100vh", overflow: "hidden" }}>
         <Topbar />
-        <div style={{ display: "flex", height: "90%" }}>
+        <div>
           <Routes>
             <Route path="/main" element={<Mainpage />}></Route>
             <Route path="/mypage" element={<Mypage getId={props.id} />}></Route>
             <Route path="/notice" element={<Notice />}></Route>
+            <Route path="/report" element={<Report />}></Route>
           </Routes>
         </div>
       </div>

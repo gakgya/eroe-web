@@ -1,10 +1,27 @@
-.notice {
- border-bottom: 1px solid #039000;
- width: 100%;
- padding-bottom: 10px;
-}
-
-.standard {
+#notice_standard {
     width: 100%;
     height: 100%;
+    margin: 0px;
+}
+#notice_standard > p{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #039000;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    align-items : center;
+    display : flex;
+}
+.notice_txt_odd {
+    width: 100%;
+    height: 55px;
+    background: rgba(3, 144, 0, 0.4);
+}
+
+.notice_txt_even {
+    width: 100%;
+    height: 55px;
+    background: rgba(3, 144, 0, 0.2);
 }

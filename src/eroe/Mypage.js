@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 function Mypage(props) {
   const navigate = useNavigate("");
+
   function onLogout() {
     const post = {
       out_id: props.id,
@@ -21,7 +22,7 @@ function Mypage(props) {
       .then((json) => {
         console.log(json);
         if (json.out == "logout") {
-          props.getId("");
+          // props.getId();
           navigate("/");
         } else {
           alert("Logout failed");
@@ -33,17 +34,18 @@ function Mypage(props) {
     <div id="standard">
       <div className="user_box">
         <div className="user_name">
-          <img
-            className="Userimg"
-            id="userimg"
-            align="left"
-            src={user}
-            alt="user"
-            onClick={{}}
-          />
-          사용자
+          <p>
+            <img
+              className="Userimg"
+              id="userimg"
+              align="left"
+              src={user}
+              alt="user"
+              onClick={{}}
+            />
+            사용자
+          </p>
         </div>
-
         <button type="button" onClick={onLogout}>
           Logout
         </button>
