@@ -42,7 +42,7 @@ function Main(props) {
     <div>
       <div style={{ height: "100vh", overflow: "hidden" }}>
         <Topbar />
-        <div style={{ display: "flex", height: "90%" }}>
+        <div>
           <Routes>
             <Route path="/main" element={<Mainpage />}></Route>
             <Route path="/mypage" element={<Mypage getId={props.id} />}></Route>

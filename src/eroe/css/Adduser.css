@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap");
+
+.adduser_txt {
+    width: 102px;
+    height: 27px;
+    left: 7px;
+    top: 79px;
+    
+    font-family: 'Kaisei HarunoUmi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    
+    color: #039000;
+}
+
+.name_txt {
+width: 79px;
+height: 27px;
+left: 31px;
+top: 123px;
+
+font-family: 'Kaisei HarunoUmi';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 29px;
+display: flex;
+align-items: flex-end;
+
+color: #039000;
+}
+
+.name_box {
+box-sizing: border-box;
+width: 300px;
+height: 45px;
+left: 30px;
+top: 150px;
+
+background: #FFFFFF;
+border: 1px solid rgba(3, 144, 0, 0.3);
+}
+
+.birth_txt {
+width: 79px;
+height: 27px;
+left: 30px;
+top: 195px;
+
+font-family: 'Kaisei HarunoUmi';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 29px;
+display: flex;
+align-items: flex-end;
+
+color: #039000;
+}
+
+.birth_box {
+box-sizing: border-box;
+width: 300px;
+height: 45px;
+left: 30px;
+top: 222px;
+
+background: #FFFFFF;
+border: 1px solid rgba(3, 144, 0, 0.3);
+}
+
+.sex_txt {
+width: 121px;
+height: 27px;
+left: 30px;
+top: 267px;
+
+font-family: 'Kaisei HarunoUmi';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 29px;
+display: flex;
+align-items: flex-end;
+
+color: #039000;
+}
+
+.sex_box {
+    
+}
