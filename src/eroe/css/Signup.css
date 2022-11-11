@@ -1,105 +1,104 @@
-@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap");
 
-.Topbarstyle {
+.topb{
     width: 100%;
     background-color: #ffffff;
     height: 55px;
     border-bottom: 1px solid rgba(3, 144, 0, 0.3);
     display: flex;
-  }
-
-  .Eroetext {
+}
+.ero{
     width: 372px;
-    margin: auto;
-    margin-top: -5px;
-    text-align: center;
-    font-weight: 400;
-    font-size: 40px;
-    color: #039000;
-    align-items: flex-end;
-    font-family: "Kaisei HarunoUmi", serif;
-  }
+  margin: auto;
+  margin-top: -5px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  color: #039000;
+  align-items: flex-end;
+  font-family: "Kaisei HarunoUmi", serif;
+
+}
 
 .signup_txt {
+
 width: 100%;
 height: 27px;
-left: 7px;
-top: 79px;
-
-font-family: "Kaisei HarunoUmi";
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 29px;
-display: flex;
-align-items: flex-end;
-
-color: #039000;}
-
-.id_txt {
-width: 100%;
-height: 27px;
-left: 31px;
-top: 123px;
+left : 7px;
+margin-left: 25px;
 
 font-family: 'Kaisei HarunoUmi';
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
+font-size: 35px;
 line-height: 29px;
+display: flex;
+
+color: #039000;
+}
+.standard{
+    width: 80%;
+    height: 100%;
+    margin: 35px auto 0 auto;
+}
+
+.sgid_txt {
+width: 100%;
+height: 25px;
+font-family: 'Kaisei HarunoUmi';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 0;
 display: flex;
 align-items: flex-end;
 
 color: #039000;
 }
 
-.id_box {
-box-sizing: border-box;
-position: absolute;
-width: 100%;
-height: 45px;
-margin: 4px auto;
-background: #FFFFFF;
-border: 1px solid rgba(3, 144, 0, 0.3);
+.sgid_box {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    margin: 4px auto;
+    background: #ffffff;
+    border: 1px solid rgba(3, 144, 0, 0.3);
 }
 
-.password_txt {
-width: 100%;
-height: 27px;
-left: 30px;
-top: 195px;
+.sgpassword_txt {
 
+width: 100%;
+height: 25px;
 font-family: 'Kaisei HarunoUmi';
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
-line-height: 29px;
+font-size: 25px;
+line-height: 0;
 display: flex;
 align-items: flex-end;
 
 color: #039000;
 }
 
-.password_box {
-box-sizing: border-box;
-width: 100%;
-height: 45px;
-margin: 4px auto;
-background: #FFFFFF;
-border: 1px solid rgba(3, 144, 0, 0.3);
-}
+.sgpassword_box {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    background: #ffffff;
+    border: 1px solid rgba(3, 144, 0, 0.3);
+  }
+
 
 .passwordconfirm_txt {
+
 width: 100%;
-height: 27px;
-left: 30px;
-top: 267px;
+height: 25px;
+
 
 font-family: 'Kaisei HarunoUmi';
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
-line-height: 29px;
+font-size: 25px;
+line-height: 0;
 display: flex;
 align-items: flex-end;
 
@@ -107,25 +106,27 @@ color: #039000;
 }
 
 .passwordconfirm_box {
-box-sizing: border-box;
-width: 300px;
-height: 45px;
-margin: 4px auto; 
-background: #FFFFFF;
-border: 1px solid rgba(3, 144, 0, 0.3);
-}
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    margin: 4px auto;
+    background: #ffffff;
+    border: 1px solid rgba(3, 144, 0, 0.3);
+  }
+
 
 .email_txt {
+
 width: 100%;
-height: 27px;
+height: 25px;
 left: 31px;
 top: 339px;
 
 font-family: 'Kaisei HarunoUmi';
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
-line-height: 29px;
+font-size: 25px;
+line-height: 0;
 display: flex;
 align-items: flex-end;
 
@@ -133,85 +134,110 @@ color: #039000;
 }
 
 .email_box {
-box-sizing: border-box;
-width: 300px;
-height: 45px;
-margin: 4px auto;
-background: #FFFFFF;
-border: 1px solid rgba(3, 144, 0, 0.3);
-}
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    margin: 4px auto;
+    background: #ffffff;
+    border: 1px solid rgba(3, 144, 0, 0.3);
+  }
 
-.address_txt {
+
+.birth_txt {
+
 width: 100%;
-height: 27px;
-left: 31px;
-top: 413px;
+height: 25px;
+
 
 font-family: 'Kaisei HarunoUmi';
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
-line-height: 29px;
+font-size: 25px;
+line-height: 0;
 display: flex;
 align-items: flex-end;
 
 color: #039000;
 }
 
-.address_box {
-box-sizing: border-box;
-width: 100%;
-height: 45px;
-margin: 4px auto;
-background: #FFFFFF;
-border: 1px solid rgba(3, 144, 0, 0.3);
-}
+.birth_box {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    margin: 4px auto;
+    background: #ffffff;
+    border: 1px solid rgba(3, 144, 0, 0.3);
+  }
 
-.name_txt {
+
+.phone_txt {
+
 width: 100%;
-height: 27px;
+height: 25px;
 left: 31px;
 top: 485px;
 
 font-family: 'Kaisei HarunoUmi';
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
-line-height: 29px;
+font-size: 25px;
+line-height: 0;
 display: flex;
 align-items: flex-end;
 
 color: #039000;
 }
+
+.phone_box {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    margin: 4px auto;
+    background: #ffffff;
+    border: 1px solid rgba(3, 144, 0, 0.3);
+  }
+    
+.name_txt {
+
+    width: 100%;
+    height: 25px;
+    
+    font-family: 'Kaisei HarunoUmi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 0;
+    display: flex;
+    align-items: flex-end;
+    
+    color: #039000;
+    }
 
 .name_box {
-box-sizing: border-box;
-width: 100%;
-height: 45px;
-margin: 4px auto;
-background: #FFFFFF;
-border: 1px solid rgba(3, 144, 0, 0.3);
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    margin: 4px auto;
+    background: #ffffff;
+    border: 1px solid rgba(3, 144, 0, 0.3);
+  }
+
+
+.sub_button {
+
+    width: 100%;
+    height: 45px;
+    margin: 4px auto;
+    background: rgba(3, 144, 0, 0.2);
+    color: #039000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    padding-top: 5px;
+    text-align: center;
+    border: none;
 }
-
-.submit_button {
-width: 100%;
-height: 27px;
-left: 141px;
-top: 697px;
-
-font-family: 'Kaisei HarunoUmi';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 29px;
-display: flex;
-align-items: flex-end;
-text-align: center;
-color: #039000;
-
-width: 100%;
-height: 45px;
-left: 31px;
-top: 689px;
-background: rgba(3, 144, 0, 0.4);
+.center{
+	width: 110px; 
+	margin: 0 auto;
 }

@@ -1,6 +1,6 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import React from "react";
-//import "./css/Signup.css";
+import "./css/Signup.css";
 import { Link, useNavigate } from "react-router-dom";
 
 function Signup() {
@@ -116,16 +116,24 @@ function Signup() {
 
   return (
     <>
-      <h3 className="signup_txt">회원가입</h3>
+    <div className = 'topb'>
+      <div className = 'ero'>eroe</div>
+      
+    </div>
+    <h3 className="signup_txt">회원가입</h3>
+    <div className = 'standard'>
+    
+     
+   
       <div>
         <div>
-          <label /* className="id_txt"*/>아이디</label> <br />
-          <input onChange={onChangeId} value={id} /* className="id_box" */ />
+          <label  className="sgid_txt">아이디</label> <br />
+          <input onChange={onChangeId} value={id}  className="sgid_box"  />
           <button onClick={onCall}>ID확인</button>
         </div>
         <div>
-          <label /*className="password_txt"*/>비밀번호</label> <br />
-          <input onChange={onChangePassword} /*className="password_box"*/ />
+          <label className="sgpassword_txt">비밀번호</label> <br />
+          <input onChange={onChangePassword} className="sgpassword_box" />
         </div>
         <div>
           <label className="passwordconfirm_txt">비밀번호 확인</label> <br />
@@ -151,10 +159,12 @@ function Signup() {
           <label className="birth_txt">생년월일</label> <br />
           <input onChange={onChangeBirth} className="birth_box" />
         </div>
-        <button onClick={submit} className="sumbit_button">
+        <button className="sub_button" onClick={submit} >
           저장
         </button>
       </div>
+    
+    </div>
     </>
   );
 }

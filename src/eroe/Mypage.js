@@ -30,10 +30,10 @@ function Mypage(props) {
   }
 
   return (
-    <div id="standard">
-      <div className="user_box">
-        <div className="user_name">
-          <p>
+    <div>
+      <div className ='bkg'>
+        <p>
+          
             <img
               className="Userimg"
               id="userimg"
@@ -50,7 +50,7 @@ function Mypage(props) {
           Logout
         </button>
       </div>
-    </div>
+    
   );
 }
 
