@@ -31,10 +31,11 @@ function Mypage(props) {
   }
 
   return (
-    <div>
-      <div className ='bkg'>
-        <p>
-          
+    <div className = 'big'>
+      <div className = 'standard'>
+        <div>
+      <div className ='user_box'>     
+      <div>
             <img
               className="user_name"
               id="userimg"
@@ -43,12 +44,19 @@ function Mypage(props) {
               alt="user"
               onClick={{}}     
             />
-          배길남
-          </p>
-        </div>
-        <button type="button" onClick={onLogout}>
+          배길남 
+          </div>           
+      <div>
+          <button type="button" onClick={onLogout} className = 'user_logout'>
           Logout
         </button>
+        <button type ='button' onClick={onLogout} className ='user_info' >
+          내 정보수정
+        </button>
+        </div>
+        </div>        
+        </div>
+      </div>
       </div>
     
   );
