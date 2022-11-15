@@ -35,22 +35,20 @@ function Mypage(props) {
   }
 
   return (
-    <div className = 'big'>
+    <div>
       <div className = 'standard'>
         <div>
       <div className ='user_box'>     
-      <div>
+      <div className = 'user'>
             <img
               className="user_name"
-              id="userimg"
-              align="left"
               src={user}
               alt="user"
               onClick={{}}     
             />
           배길남 
-          </div>           
-      <div>
+          </div>        
+      <div className = 'gib'>
           <button type="button" onClick={onLogout} className = 'user_logout'>
           Logout
         </button>
