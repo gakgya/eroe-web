@@ -4,8 +4,12 @@ import user from "./img/user.png";
 import "./css/Mypage.css";
 import { useNavigate } from "react-router-dom";
 
+
+
 function Mypage(props) {
   const navigate = useNavigate("");
+
+
 
   function onLogout() {
     const post = {
@@ -32,23 +36,31 @@ function Mypage(props) {
 
   return (
     <div>
-      <div className ='bkg'>
-        <p>
-          
+      <div className = 'standard'>
+        <div>
+      <div className ='user_box'>     
+      <div className = 'user'>
             <img
               className="user_name"
-              id="userimg"
-              align="left"
               src={user}
               alt="user"
               onClick={{}}     
             />
-          배길남
-          </p>
-        </div>
-        <button type="button" onClick={onLogout}>
+          배길남 
+          </div>        
+      <div className = 'gib'>
+          <button type="button" onClick={onLogout} className = 'user_logout'>
           Logout
         </button>
+        <button type ='button' className ='user_info'onClick={()=>{
+          navigate('/mainpage/modifymyinfo')
+        }}>  
+          내 정보수정
+        </button>
+        </div>
+        </div>        
+        </div>
+      </div>
       </div>
     
   );
