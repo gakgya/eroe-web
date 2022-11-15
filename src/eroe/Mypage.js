@@ -4,8 +4,12 @@ import user from "./img/user.png";
 import "./css/Mypage.css";
 import { useNavigate } from "react-router-dom";
 
+
+
 function Mypage(props) {
   const navigate = useNavigate("");
+
+
 
   function onLogout() {
     const post = {
@@ -50,7 +54,9 @@ function Mypage(props) {
           <button type="button" onClick={onLogout} className = 'user_logout'>
           Logout
         </button>
-        <button type ='button' onClick={onLogout} className ='user_info' >
+        <button type ='button' className ='user_info'onClick={()=>{
+          navigate('/mainpage/modifymyinfo')
+        }}>  
           내 정보수정
         </button>
         </div>
