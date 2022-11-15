@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 function Mypage(props) {
   const navigate = useNavigate("");
-  
+
   function onLogout() {
     const post = {
       out_id: props.id,
@@ -36,12 +36,12 @@ function Mypage(props) {
         <p>
           
             <img
-              className="Userimg"
+              className="user_name"
               id="userimg"
               align="left"
               src={user}
               alt="user"
-              onClick={{}}
+              onClick={{}}     
             />
           배길남
           </p>
