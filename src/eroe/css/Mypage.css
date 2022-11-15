@@ -28,6 +28,7 @@
   margin-right: 100px;
   background: rgba(3, 144, 0, 0.4);
   border-radius: 30px;
+  border: none;
 }
 
 .user_logout {
@@ -39,6 +40,7 @@
   margin-bottom: 13px;
   background: rgba(3, 144, 0, 0.4);
   border-radius: 30px;
+  border: none;
 }
 
 .user {
@@ -52,6 +54,6 @@
   width: 100%;
   margin-left: 200px;
   margin-top: 10px;
-
+  border: none;
   font-weight: 900;
 }
