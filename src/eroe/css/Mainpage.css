@@ -15,7 +15,7 @@
   margin-right: auto;
   border-style: solid;
   border-width: medium;
-  border-color: #D8D8D8;
+  border-color: #d8d8d8;
 }
 
 .human {
@@ -31,7 +31,48 @@
 .call {
   width: 100%;
   height: 70px;
-  background-color: #006475;
   position: fixed;
   bottom: 0;
+  font-family: "Julee";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+
+  color: #039000;
+}
+
+.user_add_button {
+  width: 50%;
+  height: 70px;
+  background-color: rgba(3, 144, 0, 0.4);
+  border: none;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+
+.user_add_button img {
+  width: 24px;
+  height: auto;
+}
+
+.report_button {
+  width: 50%;
+  height: 70px;
+  background-color: rgba(3, 144, 0, 0.3);
+  border: none;
+  box-sizing: border-box;
+  padding-top: 5px;
+}
+
+.report_button img {
+  width: 24px;
+  height: auto;
+}
+
+.but_des {
+  width: 100%;
 }

@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const mysql = require("mysql"); // mysql 모듈 사용
 
 var connection = mysql.createConnection({
-  host: "116.45.105.122",
+  host: "localhost",
   user: "root", //mysql의 id
   password: "", //mysql의 password
   database: "testdb", //사용할 데이터베이스
