@@ -1,0 +1,154 @@
+.modifymyinfo_txt {
+    width: 100%;
+    height: 27px;
+    left: 7px;
+    margin-left: 25px;
+    
+    font-family: 'Kaisei HarunoUmi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 29px;
+    display: flex;
+    
+    color: #039000;
+}
+
+.modifymyinfo_standard{
+    width: 80%;
+    height: 100%;
+    margin: 35px auto 0 auto;
+}
+.name_txt {
+width: 100%;
+height: 25px;
+font-family: 'Kaisei HarunoUmi';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 0;
+display: flex;
+align-items: flex-end;
+
+color: #039000;
+}
+
+.name_box {
+box-sizing: border-box;
+width: 100%;
+height: 45px;
+margin: 4px auto;
+background: #FFFFFF;
+border: 1px solid rgba(3, 144, 0, 0.3);
+}
+
+.birth_txt {
+width: 100%;
+height: 27px;
+font-family: 'Kaisei HarunoUmi';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 0;
+display: flex;
+align-items: flex-end;
+
+color: #039000;
+}
+
+.birth_box {
+box-sizing: border-box;
+width: 100%;
+height: 45px;
+background: #FFFFFF;
+border: 1px solid rgba(3, 144, 0, 0.3);
+}
+
+.sex_txt {
+width: 100%;
+height: 25px;
+font-family: 'Kaisei HarunoUmi';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 0;
+display: flex;
+align-items: flex-end;
+
+color: #039000;
+}
+
+.sex_box {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    margin: 4px auto;
+    background: #ffffff;
+    border: 1px solid rgba(3, 144, 0, 0.3);
+}
+
+.phone_txt {
+width: 100%;
+height: 25px;
+
+font-family: 'Kaisei HarunoUmi';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 0;
+display: flex;
+align-items: flex-end;
+
+color: #039000;
+}
+
+.phone_box {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    margin: 4px auto;
+    background: #ffffff;
+    border: 1px solid rgba(3, 144, 0, 0.3);
+}
+
+.address_txt {
+width: 100%;
+height: 25px;
+font-family: 'Kaisei HarunoUmi';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 0;
+display: flex;
+align-items: flex-end;
+
+color: #039000;
+}
+
+.address_box {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    margin: 4px auto;
+    background: #ffffff;
+    border: 1px solid rgba(3, 144, 0, 0.3);
+}
+
+.submit_button {
+    width: 100%;
+    height: 45px;
+    margin: 4px auto;
+    background: rgba(3, 144, 0, 0.2);
+    color: #039000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    padding-top: 5px;
+    text-align: center;
+    border: none;
+}
+
+.center{
+    width: 100px;
+    margin: 0 auto;
+}
