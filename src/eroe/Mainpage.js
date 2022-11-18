@@ -15,7 +15,7 @@ function Mainpage() {
         <div className="map">
           <Location />
         </div>
-        <div className="human">
+        <div >
           <User />
         </div>
       </div>

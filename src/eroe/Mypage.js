@@ -61,7 +61,7 @@ function Mypage(props) {
         </div>        
         </div>
       </div>
-      </div>
+    </div>
     
   );
 }
