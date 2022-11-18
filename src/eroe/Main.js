@@ -15,6 +15,7 @@ import Notice from "./Notice";
 import Report from "./Report";
 import Adduser from "./Adduser";
 import Modifymyinfo from './Modifymyinfo'
+import Setting from './Setting';
 
 function Main(props) {
   const navigate = useNavigate();
@@ -52,6 +53,7 @@ function Main(props) {
             <Route path="/report" element={<Report />}></Route>
             <Route path="/adduser" element={<Adduser />}></Route>
             <Route path="/modifymyinfo" element={<Modifymyinfo />}></Route>
+            <Route path="/setting" element={<Setting />}></Route>
           </Routes>
         </div>
       </div>
