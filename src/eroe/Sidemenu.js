@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import React from "react";
-import Modal from "./Modal";
 import "./css/Sidemenu.css";
 
 function Sidemenu() {

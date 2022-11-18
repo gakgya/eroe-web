@@ -5,11 +5,17 @@ import {useRef} from 'react';
 import user from "./img/user.png";
 import { Link, useNavigate } from "react-router-dom";
 
+
+
 function Topbar() {
   const navigate = useNavigate();
 
+  
+
+
 
   return (
+    
     <div>
       <div
         className="Topbarstyle"
