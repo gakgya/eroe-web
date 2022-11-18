@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import {
   Router,
   Routes,
@@ -14,11 +15,13 @@ import Mypage from "./Mypage";
 import Notice from "./Notice";
 import Report from "./Report";
 import Adduser from "./Adduser";
-import Modifymyinfo from './Modifymyinfo'
+import Modifymyinfo from './Modifymyinfo';
 import Setting from './Setting';
+import Locationinfo from "./Locationinfo";
 
 function Main(props) {
   const navigate = useNavigate();
+  const [name, setName] = useState();
   function check() {
     const idpost = {
       se_id: props.id,
@@ -35,6 +38,7 @@ function Main(props) {
         console.log(json);
         if (json.login === "True") {
           console.log("");
+          setName(json.user);
         } else {
           navigate("/");
         }
@@ -48,12 +52,16 @@ function Main(props) {
         <div>
           <Routes>
             <Route path="/main" element={<Mainpage />}></Route>
-            <Route path="/mypage" element={<Mypage getId={props.id} />}></Route>
+            <Route
+              path="/mypage"
+              element={<Mypage getId={props.id} id={props.id} name={name} />}
+            ></Route>
             <Route path="/notice" element={<Notice />}></Route>
             <Route path="/report" element={<Report />}></Route>
             <Route path="/adduser" element={<Adduser />}></Route>
             <Route path="/modifymyinfo" element={<Modifymyinfo />}></Route>
             <Route path="/setting" element={<Setting />}></Route>
+            <Route path="/locationinfo" element={<Locationinfo />}></Route>
           </Routes>
         </div>
       </div>
