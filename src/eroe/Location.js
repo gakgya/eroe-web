@@ -2,8 +2,8 @@ import React, { useEffect, useState, useRef } from "react";
 import { Map, MapMarker } from "react-kakao-maps-sdk";
 
 function Location() {
-  const [loc_lat, setLoc_lat] = useState(33.5563);
-  const [loc_lng, setLoc_lng] = useState(126.79581);
+  const [loc_lat, setLoc_lat] = useState(37.4480);
+  const [loc_lng, setLoc_lng] = useState(127.1694);
   const text = "현재위치";
 
   useInterval(() => {
