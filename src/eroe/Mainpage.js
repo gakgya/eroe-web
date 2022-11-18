@@ -3,6 +3,8 @@ import "./css/Mainpage.css";
 import Location from "./Location";
 import User from "./User";
 import Call from "./Call";
+import user_add from "./img/user_add.png";
+import report from "./img/report.png";
 import { Link, useNavigate } from "react-router-dom";
 
 function Mainpage() {
@@ -18,13 +20,27 @@ function Mainpage() {
         </div>
       </div>
       <footer className="call">
-        긴급 전화 번호
-        <button className="user_add_button" onClick={() => {
-          navigate("/mainpage/adduser");
-        }}> 사용자 추가</button>
-        <button className="report_button" onClick={() => {
+        <div
+          className="user_add_button"
+          onClick={() => {
+            navigate("/mainpage/adduser");
+          }}
+        >
+          <img src={user_add} alt="user_add" />
+          <br />
+          사용자 추가
+        </div>
+
+        <div
+          className="report_button"
+          onClick={() => {
             navigate("/mainpage/report");
-          }}> 신고하기</button>
+          }}
+        >
+          <img src={report} alt="report" />
+          <br />
+          신고하기
+        </div>
       </footer>
     </div>
   );

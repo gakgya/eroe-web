@@ -63,7 +63,7 @@ function Modifyuserinfo() {
 
     return (
         <>
-        <h3 className="modifyuserinfo_txt">사용자 추가</h3>
+        <h3 className="modifyuserinfo_txt">사용자 정보 수정</h3>
         <div className = 'modifyuserinfo_standard'>
 
             <div>

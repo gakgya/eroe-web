@@ -1,60 +1,62 @@
 #standard {
-    width: 90%;
-    height: 100%;
-    margin: 15px auto 0px auto;
-    display : flex;
-  }
-  .user_box {
-    
-    background: rgba(3, 144, 0, 0.3);
-    border-radius: 30px;
-    width : 100%;
-    height: 151px;
-    margin-top: 6px;
-    display : flex;
-   
-  }
-  .user_name {
-    width: 200px;
-    height: 103px;
-    background: rgba(3, 144, 0, 0.4);
-    border-radius: 50px;
-    color : green;
-    margin: auto 0px auto 0px;
-  }
-  .user_info{
-width: 70%;
-height: 50px;
-color : green;
-font-weight: 700;
-margin-right : 100px;
-background: rgba(3, 144, 0, 0.4);
-border-radius: 30px;
-  }
-
-.user_logout{
-    width: 70%;
-    height: 50px;
-    color : green;
-    font-weight: 700;
-    margin-right : 100px;
-    margin-bottom: 13px;
-    background: rgba(3, 144, 0, 0.4);
-    border-radius: 30px;
+  width: 95%;
+  height: 100%;
+  margin: 15px auto 0px auto;
+  display: flex;
+}
+.user_box {
+  background: rgba(3, 144, 0, 0.3);
+  border-radius: 30px;
+  width: 100%;
+  height: 151px;
+  margin-top: 6px;
+  display: flex;
+}
+.user_name {
+  width: 103px;
+  height: auto;
+  background: rgba(3, 144, 0, 0.4);
+  border-radius: 50px;
+  color: green;
+  margin: auto 0px auto 0px;
+}
+.user_info {
+  width: 90%;
+  height: 50px;
+  color: green;
+  font-weight: 700;
+  background: rgba(3, 144, 0, 0.4);
+  border-radius: 30px;
+  margin: 0px auto 0 auto;
+  margin-left: 20px;
+  margin-right: 10px;
+  border: none;
 }
 
-.user{
-width : 15%;
-  color : green;
-  margin-top : 15px;
-  margin-left : 15px;
+.user_logout {
+  width: 90%;
+  height: 50px;
+  color: green;
+  font-weight: 700;
+  margin: 0px auto 0 auto;
+  margin-bottom: 13px;
+  background: rgba(3, 144, 0, 0.4);
+  border-radius: 30px;
+  margin-left: 20px;
+  margin-right: 10px;
+  border: none;
+}
+
+.user {
+  width: 100px;
+  color: green;
+  margin-top: 15px;
+  margin-left: 15px;
   font-weight: 900;
-  
+  text-align: center;
 }
-.gib{
-    width: 100%;
-    margin-left : 200px;
-    margin-top : 10px;
-    
-    font-weight: 900;
+.gib {
+  width: 100%;
+  margin-top: 15px;
+  font-weight: 900;
 }
