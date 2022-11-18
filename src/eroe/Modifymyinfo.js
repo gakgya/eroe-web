@@ -3,98 +3,95 @@ import React from "react";
 import "./css/Modifymyinfo.css";
 import { Link, useNavigate } from "react-router-dom";
 
-function Modifymyinfo() {
-    const navigate = useNavigate();
-    const [name, setName] = useState("");
-    const [birth, setBirth] = useState("");
-    const [sex, setSex] = useState("");
-    const [phone, setPhone] = useState("");
-    const [address, setAddress] = useState("");
+function Modifymyinfo(props) {
+  const navigate = useNavigate();
+  const mo_id = props.id;
+  const [name, setName] = useState("");
+  const [birth, setBirth] = useState("");
+  const [mail, setMail] = useState("");
+  const [phone, setPhone] = useState("");
 
-    function onChangeName(e) {
-        setName(e.target.value);
-    }
-    function onChangeBirth(e) {
-        setBirth(e.target.value);
-    }
-    function onChangeSex(e) {
-        setSex(e.target.value);
-    }
-    function onChangePhone(e) {
-        setPhone(e.target.value);
-    }
-    function onChangeAddress(e) {
-        setAddress(e.target.value);
-    }
-    function submit() {
-        if (name === "") {
-            alert("이름을 입력해주십시오.");
-            return;
-        } else if (birth === "") {
-            alert("생일을 입력해주십시오.");
-            return;
-        } else if (sex === "") {
-            alert("성별을 입력해주십시오.");
-            return;
-        } else if (phone === "") {
-            alert("휴대폰 번호를 입력해주십시오.");
-            return;
-        } else if (address === "") {
-            alert("주소를 입력해주십시오.");
-            return;
-        } else {
-            const post = {
-                post_name: name,
-                post_birth: birth,
-                post_sex: sex,
-                post_phone: phone,
-                post_address: address,
-            };
-            fetch("http://localhost:3001/idplz", {
-                method: "post",
-                headers: {
-                    "content-type": "application/json",
-                },
-                body: JSON.stringify(post),
-            }).then((res) => res.json());
-            navigate("/");
-        }
-    }
+  function onChangeName(e) {
+    setName(e.target.value);
+  }
+  function onChangeBirth(e) {
+    setBirth(e.target.value);
+  }
+  function onChangeMail(e) {
+    setMail(e.target.value);
+  }
+  function onChangePhone(e) {
+    setPhone(e.target.value);
+  }
 
-    return (
-        <>
-        <h3 className="modifymyinfo_txt">내 정보 수정</h3>
-        <div className = 'modifymyinfo_standard'>
+  function submit() {
+    if (name === "") {
+      alert("이름을 입력해주십시오.");
+      return;
+    } else if (birth === "") {
+      alert("생일을 입력해주십시오.");
+      return;
+    } else if (mail === "") {
+      alert("성별을 입력해주십시오.");
+      return;
+    } else if (phone === "") {
+      alert("휴대폰 번호를 입력해주십시오.");
+      return;
+    } else {
+      const post = {
+        ck_id: mo_id,
+        post_name: name,
+        post_birth: birth,
+        post_mail: mail,
+        post_phone: phone,
+      };
+      fetch("http://localhost:3001/modifyuser", {
+        method: "post",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(post),
+      })
+        .then((res) => res.json())
+        .then((json) => {
+          console.log(json);
+          if (json.modi == "True") {
+            navigate("/mainpage/mypage");
+          } else {
+            alert("정보수정 실패");
+          }
+        });
+    }
+  }
 
-            <div>
-                <div>
-                    <label className="name_txt">이름</label> <br />
-                    <input onChange={onChangeName} className="name_box" />
-                </div>
-                <div>
-                    <label className="birth_txt">생년월일</label> <br />
-                    <input onChange={onChangeBirth} className="birth_box" />
-                </div>
-                <div>
-                    <label className="sex_txt">성별</label> <br />
-                    <input onChange={onChangeSex} className="sex_box" />
-                </div>
-                <div>
-                    <label className="phone_txt">전화번호</label> <br />
-                    <input onChange={onChangePhone} className="phone_box" />
-                </div>
-                <div>
-                    <label className="address_txt">주소</label> <br />
-                    <input onChange={onChangeAddress} className="address_box" />
-                </div>
-                <button onClick={submit} className="submit_button">
-                    저장
-                </button>
-            </div>
-
+  return (
+    <>
+      <h3 className="modifymyinfo_txt">내 정보 수정</h3>
+      <div className="modifymyinfo_standard">
+        <div>
+          <div>
+            <label className="txt">이름</label> <br />
+            <input onChange={onChangeName} className="box" />
+          </div>
+          <div>
+            <label className="txt">생년월일</label> <br />
+            <input onChange={onChangeBirth} className="box" />
+          </div>
+          <div>
+            <label className="txt">이메일</label> <br />
+            <input onChange={onChangeMail} className="box" />
+          </div>
+          <div>
+            <label className="txt">전화번호</label> <br />
+            <input onChange={onChangePhone} className="box" />
+          </div>
+          <button onClick={submit} className="submit_button">
+            저장
+          </button>
         </div>
+      </div>
     </>
-    );
+  );
 }
 
 export default Modifymyinfo;

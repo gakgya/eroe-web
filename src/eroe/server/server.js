@@ -115,6 +115,7 @@ app.post("/login", (req, res) => {
 app.post("/session", (req, res) => {
   const check_id = req.body.se_id;
   var login = 0;
+  var name = "";
 
   console.log(req.body);
   connection.query("SELECT * FROM user", function (err, rows, fields) {
@@ -126,13 +127,15 @@ app.post("/session", (req, res) => {
         if (check_id == rows[key].User_ID && rows[key].Login_State == "True") {
           console.log(rows[key].User_ID);
           login = 1;
+          name = rows[key].User_Name;
           break;
         } else {
           continue;
         }
       }
       if (login == 1) {
-        res.send({ login: "True" });
+        res.send({ login: "True", user: name });
+        console.log(name);
       } else {
         res.send({ login: "False" });
       }
@@ -172,6 +175,28 @@ app.post("/locate", (req, res) => {
           loc_latitude: rows[0].loc_latitude,
           loc_longtitude: rows[0].loc_longtitude,
         });
+      }
+    }
+  );
+});
+
+app.post("/modifyuser", (req, res) => {
+  const check_id = req.body.ck_id;
+  const name = req.body.post_name;
+  const birth = req.body.post_birth;
+  const mail = req.body.post_mail;
+  const phone = req.body.post_phone;
+
+  console.log(req.body);
+  connection.query(
+    "UPDATE user SET User_Name=(?), User_Birth=(?), User_Phonenum=(?), User_Email=(?) WHERE User_ID = (?)",
+    [name, birth, mail, phone, check_id],
+    function (err, rows, fields) {
+      if (err) {
+        console.log("불러오기 실패");
+      } else {
+        console.log("불러오기 성공");
+        res.send({ modi: "True" });
       }
     }
   );

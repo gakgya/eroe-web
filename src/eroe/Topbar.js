@@ -4,7 +4,7 @@ import notifi from "./img/notification.png";
 import {useRef} from 'react';
 import user from "./img/user.png";
 import { Link, useNavigate } from "react-router-dom";
-import OutsideAlerter from "./OutsideAlerter";
+
 
 
 function Topbar() {
@@ -43,7 +43,7 @@ function Topbar() {
                 navigate("/mainpage/notice");
               }}
             >
-              사용자 설정
+              환자정보 수정
             </div>
             <div
               className="side_odd"
@@ -63,9 +63,12 @@ function Topbar() {
             </div>
           </div>
         </div>
-        <div className="Eroetext"onClick = {()=> {
-          navigate('/mainpage/main')
-        }}>
+        <div
+          className="Eroetext"
+          onClick={() => {
+            navigate("/mainpage/main");
+          }}
+        >
           <div>eroe</div>
         </div>
         <img
