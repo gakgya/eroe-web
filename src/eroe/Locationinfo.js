@@ -4,9 +4,13 @@ import "./css/Location_info.css";
 
 function Location_info() {
     return (
-        <div id="location_info_standard">
-            <Location/>
-        </div>
+
+            <div id="location_info_standard">
+                <div className = "location_map">
+                    <Location/>
+                </div>
+            </div>
+
     )
 }
 

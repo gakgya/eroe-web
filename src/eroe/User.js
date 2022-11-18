@@ -29,7 +29,7 @@ function User() {
           <button type ='button' className ='user_info'onClick={()=>{
             navigate('/mainpage/locationinfo')
           }}>  
-            내 정보수정
+            환자 정보 수정
           </button>
           </div>
           </div>        
