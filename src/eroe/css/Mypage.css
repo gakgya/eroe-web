@@ -42,9 +42,6 @@
   margin-bottom: 13px;
   background: rgba(3, 144, 0, 0.4);
   border-radius: 30px;
-  margin-left: 20px;
-  margin-right: 10px;
-  border: none;
 }
 
 .user {
@@ -57,6 +54,8 @@
 }
 .gib {
   width: 100%;
-  margin-top: 15px;
+  margin-left: 200px;
+  margin-top: 10px;
+
   font-weight: 900;
 }
