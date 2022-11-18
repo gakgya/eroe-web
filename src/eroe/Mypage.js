@@ -35,7 +35,7 @@ function Mypage(props) {
       <div className="user_box">
         <div className="user">
           <img className="user_name" src={user} alt="user" onClick={{}} />
-          배길남
+          {props.name}
         </div>
         <div className="gib">
           <button type="button" onClick={onLogout} className="user_logout">
