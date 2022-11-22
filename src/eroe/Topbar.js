@@ -19,7 +19,7 @@ function Topbar() {
     <div>
       <div
         className="Topbarstyle"
-        style={{ position: "relative", zIndex: "2" }}
+        style={{ position: "relative", zIndex: "3" }}
       >
         <div>
           <input type="checkbox" id="check_box" />
