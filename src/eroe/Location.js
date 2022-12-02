@@ -7,7 +7,7 @@ function Location(props) {
   const text = "현재위치";
 
   useInterval(() => {
-    fetch("http://localhost:3001/locate", {
+    fetch("http://gakgya.iptime.org:3001/locate", {
       method: "post", // 통신방법
       headers: {
         "content-type": "application/json",

@@ -78,7 +78,7 @@ function Signup() {
         post_phone: phone,
         post_birth: birth,
       };
-      fetch("http://localhost:3001/idplz", {
+      fetch("http://gakgya.iptime.org:3001idplz", {
         method: "post", // 통신방법
         headers: {
           "content-type": "application/json",
@@ -94,7 +94,7 @@ function Signup() {
       return;
     } else {
       const idpost = { check_id: id };
-      fetch("http://localhost:3001/callbody", {
+      fetch("http://gakgya.iptime.org:3001/callbody", {
         method: "post",
         headers: {
           "content-type": "application/json",
@@ -116,55 +116,50 @@ function Signup() {
 
   return (
     <>
-    <div className = 'topb'>
-      <div className = 'ero'>eroe</div>
-      
-    </div>
-    <h3 className="signup_txt">회원가입</h3>
-    <div className = 'standard'>
-    
-     
-   
-      <div>
-        <div>
-          <label  className="sgid_txt">아이디</label> <br />
-          <input onChange={onChangeId} value={id}  className="sgid_box"  />
-          <button onClick={onCall}>ID확인</button>
-        </div>
-        <div>
-          <label className="sgpassword_txt">비밀번호</label> <br />
-          <input onChange={onChangePassword} className="sgpassword_box" />
-        </div>
-        <div>
-          <label className="passwordconfirm_txt">비밀번호 확인</label> <br />
-          <input
-            onChange={onChangePasswordConfirm}
-            className="passwordconfirm_box"
-          />
-          <p>{passwordtxt}</p>
-        </div>
-        <div>
-          <label className="name_txt">이름</label> <br />
-          <input onChange={onChangeName} className="name_box" />
-        </div>
-        <div>
-          <label className="email_txt">이메일</label> <br />
-          <input onChange={onChangeEmail} className="email_box" />
-        </div>
-        <div>
-          <label className="phone_txt">전화번호</label> <br />
-          <input onChange={onChangePhone} className="phone_box" />
-        </div>
-        <div>
-          <label className="birth_txt">생년월일</label> <br />
-          <input onChange={onChangeBirth} className="birth_box" />
-        </div>
-        <button className="sub_button" onClick={submit} >
-          저장
-        </button>
+      <div className="topb">
+        <div className="ero">eroe</div>
       </div>
-    
-    </div>
+      <h3 className="signup_txt">회원가입</h3>
+      <div className="standard">
+        <div>
+          <div>
+            <label className="sgid_txt">아이디</label> <br />
+            <input onChange={onChangeId} value={id} className="sgid_box" />
+            <button onClick={onCall}>ID확인</button>
+          </div>
+          <div>
+            <label className="sgpassword_txt">비밀번호</label> <br />
+            <input onChange={onChangePassword} className="sgpassword_box" />
+          </div>
+          <div>
+            <label className="passwordconfirm_txt">비밀번호 확인</label> <br />
+            <input
+              onChange={onChangePasswordConfirm}
+              className="passwordconfirm_box"
+            />
+            <p>{passwordtxt}</p>
+          </div>
+          <div>
+            <label className="name_txt">이름</label> <br />
+            <input onChange={onChangeName} className="name_box" />
+          </div>
+          <div>
+            <label className="email_txt">이메일</label> <br />
+            <input onChange={onChangeEmail} className="email_box" />
+          </div>
+          <div>
+            <label className="phone_txt">전화번호</label> <br />
+            <input onChange={onChangePhone} className="phone_box" />
+          </div>
+          <div>
+            <label className="birth_txt">생년월일</label> <br />
+            <input onChange={onChangeBirth} className="birth_box" />
+          </div>
+          <button className="sub_button" onClick={submit}>
+            저장
+          </button>
+        </div>
+      </div>
     </>
   );
 }

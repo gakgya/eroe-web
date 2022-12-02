@@ -15,8 +15,8 @@ import Mypage from "./Mypage";
 import Notice from "./Notice";
 import Report from "./Report";
 import Adduser from "./Adduser";
-import Modifymyinfo from './Modifymyinfo';
-import Setting from './Setting';
+import Modifymyinfo from "./Modifymyinfo";
+import Modifyuserinfo from "./Modifyuserinfo";
 import Locationinfo from "./Locationinfo";
 
 function Main(props) {
@@ -26,7 +26,7 @@ function Main(props) {
     const idpost = {
       se_id: props.id,
     };
-    fetch("http://localhost:3001/session", {
+    fetch("http://gakgya.iptime.org:3001/session", {
       method: "post", // 통신방법
       headers: {
         "content-type": "application/json",
@@ -60,7 +60,7 @@ function Main(props) {
             <Route path="/report" element={<Report />}></Route>
             <Route path="/adduser" element={<Adduser />}></Route>
             <Route path="/modifymyinfo" element={<Modifymyinfo />}></Route>
-            <Route path="/setting" element={<Setting />}></Route>
+            <Route path="/modifyuserinfo" element={<Modifyuserinfo />}></Route>
             <Route path="/locationinfo" element={<Locationinfo />}></Route>
           </Routes>
         </div>
