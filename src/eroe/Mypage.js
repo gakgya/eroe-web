@@ -11,7 +11,7 @@ function Mypage(props) {
     const post = {
       out_id: props.id,
     };
-    fetch("http://localhost:3001/logout", {
+    fetch("http://gakgya.iptime.org:3001/logout", {
       method: "post", // 통신방법
       headers: {
         "content-type": "application/json",

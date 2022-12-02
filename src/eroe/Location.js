@@ -2,12 +2,12 @@ import React, { useEffect, useState, useRef } from "react";
 import { Map, MapMarker } from "react-kakao-maps-sdk";
 
 function Location() {
-  const [loc_lat, setLoc_lat] = useState(37.4480);
+  const [loc_lat, setLoc_lat] = useState(37.448);
   const [loc_lng, setLoc_lng] = useState(127.1694);
   const text = "현재위치";
 
   useInterval(() => {
-    fetch("http://localhost:3001/locate", {
+    fetch("http://gakgya.iptime.org:3001/locate", {
       method: "post", // 통신방법
       headers: {
         "content-type": "application/json",

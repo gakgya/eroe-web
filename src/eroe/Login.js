@@ -26,7 +26,7 @@ function Login(props) {
       post_id: id,
       post_password: password,
     };
-    fetch("http://localhost:3001/login", {
+    fetch("http://gakgya.iptime.org:3001/login", {
       method: "post", // 통신방법
       headers: {
         "content-type": "application/json",

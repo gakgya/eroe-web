@@ -45,7 +45,7 @@ function Modifymyinfo(props) {
         post_mail: mail,
         post_phone: phone,
       };
-      fetch("http://localhost:3001/modifyuser", {
+      fetch("http://gakgya.iptime.org:3001/modifyuser", {
         method: "post",
         headers: {
           "content-type": "application/json",
