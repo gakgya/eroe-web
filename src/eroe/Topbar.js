@@ -1,13 +1,12 @@
 import React from "react";
 import "./css/Topbar.css";
 import notifi from "./img/notification.png";
-import {useRef} from 'react';
+import { useRef } from "react";
 import user from "./img/user.png";
 import { Link, useNavigate } from "react-router-dom";
 
 function Topbar() {
   const navigate = useNavigate();
-
 
   return (
     <div>
@@ -34,7 +33,7 @@ function Topbar() {
             <div
               className="side_even"
               onClick={() => {
-                navigate("/mainpage/notice");
+                navigate("/mainpage/modifyuserinfo");
               }}
             >
               환자정보 수정

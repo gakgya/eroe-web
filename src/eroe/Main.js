@@ -16,6 +16,7 @@ import Notice from "./Notice";
 import Report from "./Report";
 import Adduser from "./Adduser";
 import Modifymyinfo from "./Modifymyinfo";
+import Modifyuserinfo from "./Modifyuserinfo";
 import Locationinfo from "./Locationinfo";
 
 function Main(props) {
@@ -59,6 +60,7 @@ function Main(props) {
             <Route path="/report" element={<Report />}></Route>
             <Route path="/adduser" element={<Adduser />}></Route>
             <Route path="/modifymyinfo" element={<Modifymyinfo />}></Route>
+            <Route path="/modifyuserinfo" element={<Modifyuserinfo />}></Route>
             <Route path="/locationinfo" element={<Locationinfo />}></Route>
           </Routes>
         </div>
