@@ -28,7 +28,7 @@ function Location_info() {
               />
             </div>
             <div>
-              <h3 className="location_user_text">현재주소</h3>
+              <h3 className="location_user_text">현재 위치</h3>
               <p className="location_user_text">{addr}</p>
             </div>   
           </div>        
