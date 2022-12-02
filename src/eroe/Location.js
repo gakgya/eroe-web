@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Map, MapMarker } from "react-kakao-maps-sdk";
 
-function Location() {
-  const [loc_lat, setLoc_lat] = useState(37.448);
-  const [loc_lng, setLoc_lng] = useState(127.1694);
+function Location(props) {
+  const [loc_lat, setLoc_lat] = useState(37.4472);
+  const [loc_lng, setLoc_lng] = useState(127.1644);
   const text = "현재위치";
 
   useInterval(() => {
@@ -39,6 +39,29 @@ function Location() {
         return () => clearInterval(id);
       }
     }, [delay]);
+
+    //kakao api를 글로벌로 사용함
+    /*global kakao*/ 
+
+    function getAddr(lat, lng){
+      // 주소-좌표 변환 객체를 생성합니다
+      let geocoder = new kakao.maps.services.Geocoder();
+
+      let coord = new kakao.maps.LatLng(lat, lng);
+      let callback = function(result, status) {
+          if (status === kakao.maps.services.Status.OK) {
+              const arr  ={ ...result};
+              const _arr = arr[0].address.address_name;
+              props.getAddr(_arr);
+          }
+      }
+      geocoder.coord2Address(coord.getLng(), coord.getLat(), callback);
+    }
+
+    useEffect(()=>{
+      getAddr(loc_lat, loc_lng);
+    })
+
   }
   return (
     <Map
