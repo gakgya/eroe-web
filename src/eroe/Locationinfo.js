@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Location from "./Location";
 import "./css/Location_info.css";
 import user from "./img/user.png";
 
 function Location_info() {
+
+  const [addr, setAddr] = useState("")
+
+  const getAddr = (addr) => {
+    setAddr(addr);
+  }
+
   return (
     <div className="location_info_standard">
       <div className="location_map">
-        <Location />
+        <Location getAddr={getAddr}/>
       </div>
       <div className = "standard location_user">
           <div style={{backgroundColor: "white", borderRadius: 30}}>
@@ -20,10 +27,10 @@ function Location_info() {
                 onClick={{}}     
               />
             </div>
-            <pre>
-              현재주소<br/>
-              신구대학교 남관
-            </pre>        
+            <div>
+              <h3 className="location_user_text">현재주소</h3>
+              <p className="location_user_text">{addr}</p>
+            </div>   
           </div>        
           </div>
         </div>
