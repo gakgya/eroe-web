@@ -6,7 +6,7 @@ function User() {
   const navigate = useNavigate("");
 
   return (
-    <div id="standard">
+    <div className="standard">
       <div className="user_box">
         <div className="user">
           <img className="user_name" src={user} alt="user" onClick={{}} />
