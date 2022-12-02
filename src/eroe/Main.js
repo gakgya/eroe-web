@@ -18,6 +18,7 @@ import Adduser from "./Adduser";
 import Modifymyinfo from "./Modifymyinfo";
 import Modifyuserinfo from "./Modifyuserinfo";
 import Locationinfo from "./Locationinfo";
+import Setting from "./Setting";
 
 function Main(props) {
   const navigate = useNavigate();
@@ -62,6 +63,7 @@ function Main(props) {
             <Route path="/modifymyinfo" element={<Modifymyinfo />}></Route>
             <Route path="/modifyuserinfo" element={<Modifyuserinfo />}></Route>
             <Route path="/locationinfo" element={<Locationinfo />}></Route>
+            <Route path="/setting" element={<Setting />}></Route>
           </Routes>
         </div>
       </div>
