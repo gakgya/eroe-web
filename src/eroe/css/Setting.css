@@ -1,49 +1,83 @@
 .setting_button {
-position: absolute;
-width: 360px;
+width: 100%;
 height: 55px;
 left: 0px;
 top: 55px;
+border: none;
 
 background: rgba(3, 144, 0, 0.4);
+
+font-family: 'Kaisei HarunoUmi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #039000;
 }
 
 .notice_button {
-position: absolute;
-width: 360px;
+width: 100%;
 height: 55px;
 left: 0px;
 top: 110px;
+border: none;
 
 background: rgba(3, 144, 0, 0.2);
+
+font-family: 'Kaisei HarunoUmi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #039000;
 }
 
 .version_button {
-position: absolute;
-width: 360px;
+width: 100%;
 height: 55px;
 left: 0px;
 top: 165px;
+border: none;
 
 background: rgba(3, 144, 0, 0.4);
+
+font-family: 'Kaisei HarunoUmi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #039000;
 }
 
 .notice_setting_button {
-position: absolute;
-width: 360px;
-height: 55px;
-left: 0px;
-top: 220px;
-
-background: rgba(3, 144, 0, 0.2);
+    width: 100%;
+    height: 55px;
+    left: 0px;
+    top: 220px;
+    border: none;
+    
+    background: rgba(3, 144, 0, 0.2);
+    
+    font-family: 'Kaisei HarunoUmi';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 29px;
+        color: #039000;
 }
-
 .service_center_button {
-position: absolute;
-width: 360px;
+width: 100%;
 height: 55px;
 left: 0px;
 top: 275px;
+border: none;
 
 background: rgba(3, 144, 0, 0.4);
+
+font-family: 'Kaisei HarunoUmi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #039000;
 }
