@@ -18,14 +18,14 @@ function User() {
                 alt="user"
                 onClick={{}}     
               />
-            배길남 
+            노태우
             </div>        
         <div className = 'gib'>
             <button type="button" className ='user_info'onClick={()=>{
             navigate('/mainpage/locationinfo')
           }}>
             위치 확인
-          </button>
+          </button>                    
           <button type ='button' className ='user_info'onClick={()=>{
             navigate('/mainpage/locationinfo')
           }}>  
