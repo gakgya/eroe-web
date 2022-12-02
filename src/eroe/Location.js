@@ -51,7 +51,7 @@ function Location(props) {
       let callback = function(result, status) {
           if (status === kakao.maps.services.Status.OK) {
               const arr  ={ ...result};
-              const _arr = arr[0].address.region_2depth_name;
+              const _arr = arr[0].address.address_name;
               props.getAddr(_arr);
           }
       }
