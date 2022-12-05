@@ -73,9 +73,9 @@ app.post("/callbody", (req, res) => {
 });
 app.post("/callbody_find", (req, res) => {
   const fcheck_birth = req.body.check_birth;
-  const fcheck_id = req.body.check_Id;
   const fcheck_name = req.body.check_name;
   var ck = 0;
+  var ckid = "";
   connection.query("SELECT * FROM user ", function (err, rows, fields) {
     if (err) {
       console.log("불러오기 실패");
@@ -85,16 +85,18 @@ app.post("/callbody_find", (req, res) => {
       console.log(rows[0].User_ID);
 
       for (var key in rows) {
-        if ((fcheck_id == rows[key].User_ID) && (fcheck_birth == rows[key].User_Birth) && (fcheck_name == rows[key].User_Name))  {
-          console.log(rows[key].User_Name);
+        if ((fcheck_birth == rows[key].User_Birth) && (fcheck_name == rows[key].User_Name))  {
+          console.log(rows[key].User_ID);
           ck = 1;
+          ckid = rows[key].User_ID
+          console.log(ckid);
           break;
         } else {
           continue;
         }
       }
       if (ck == 1) {
-        res.send({fcheck_id });
+        res.send({ck : "" });
       } else {
         res.send({ ck: "False" });
       }
