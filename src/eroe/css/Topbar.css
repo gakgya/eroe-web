@@ -103,6 +103,7 @@
   font-weight: 400;
   font-size: 20px;
   color: #039000;
+  border-right:solid 1px #039000;
 }
 #side_menu .side_even {
   height: 55px;

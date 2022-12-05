@@ -32,23 +32,6 @@ font-family: 'Kaisei HarunoUmi';
     color: #039000;
 }
 
-.version_button {
-width: 100%;
-height: 55px;
-left: 0px;
-top: 165px;
-border: none;
-
-background: rgba(3, 144, 0, 0.4);
-
-font-family: 'Kaisei HarunoUmi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 29px;
-    color: #039000;
-}
-
 .notice_setting_button {
     width: 100%;
     height: 55px;
@@ -56,7 +39,7 @@ font-family: 'Kaisei HarunoUmi';
     top: 220px;
     border: none;
     
-    background: rgba(3, 144, 0, 0.2);
+    background: rgba(3, 144, 0, 0.4);
     
     font-family: 'Kaisei HarunoUmi';
         font-style: normal;
@@ -72,7 +55,7 @@ left: 0px;
 top: 275px;
 border: none;
 
-background: rgba(3, 144, 0, 0.4);
+background: rgba(3, 144, 0, 0.2);
 
 font-family: 'Kaisei HarunoUmi';
     font-style: normal;
