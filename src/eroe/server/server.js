@@ -74,29 +74,28 @@ app.post("/callbody", (req, res) => {
 app.post("/callbody_find", (req, res) => {
   const fcheck_birth = req.body.check_birth;
   const fcheck_name = req.body.check_name;
-  var ck = 0;
-  var ckid = "";
+  var idf = 0;
+  var idfid;
   connection.query("SELECT * FROM user ", function (err, rows, fields) {
     if (err) {
       console.log("불러오기 실패");
     } else {
-      console.log(rows[0].User_Birth);
-      console.log(rows[0].User_Name);
-      console.log(rows[0].User_ID);
-
       for (var key in rows) {
-        if ((fcheck_birth == rows[key].User_Birth) && (fcheck_name == rows[key].User_Name))  {
+        if (
+          fcheck_birth == rows[key].User_Birth &&
+          fcheck_name == rows[key].User_Name
+        ) {
           console.log(rows[key].User_ID);
-          ck = 1;
-          ckid = rows[key].User_ID
-          console.log(ckid);
+          idf = 1;
+          idfid = rows[key].User_ID;
+          console.log(idfid);
           break;
         } else {
           continue;
         }
       }
-      if (ck == 1) {
-        res.send({ck : "" });
+      if (idf == 1) {
+        res.send({ ck: "True", ckh: idfid });
       } else {
         res.send({ ck: "False" });
       }
