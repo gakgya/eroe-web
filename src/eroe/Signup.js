@@ -14,6 +14,13 @@ function Signup() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [birth, setBirth] = useState("");
+  
+const [hidePassword, setHidePassword] = useState(true);
+
+const toggleHidePassword =()=>{
+	setHidePassword(!hidePassword);
+}
+
 
   function onChangeId(e) {
     setId(e.target.value);
@@ -129,11 +136,15 @@ function Signup() {
           </div>
           <div>
             <label className="sgpassword_txt">비밀번호</label> <br />
-            <input onChange={onChangePassword} className="sgpassword_box" />
+            <input 
+            type = {hidePassword ? 'password' : 'text'}
+            onChange={onChangePassword} 
+            className="sgpassword_box" />
           </div>
           <div>
             <label className="passwordconfirm_txt">비밀번호 확인</label> <br />
             <input
+            type = {hidePassword ? 'password' : 'text'}
               onChange={onChangePasswordConfirm}
               className="passwordconfirm_box"
             />

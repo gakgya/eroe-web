@@ -1,7 +1,7 @@
 import React from "react";
 import "./css/Topbar.css";
 import notifi from "./img/notification.png";
-import { useRef } from "react";
+import { useRef,useState } from "react";
 import user from "./img/user.png";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -9,9 +9,11 @@ import { Link, useNavigate } from "react-router-dom";
 
 function Topbar() {
   const navigate = useNavigate();
-  
+  const [isOpen, setIsopen] = useState(false);
 
-
+  const ToggleSidebar = () => {
+      isOpen === true ? setIsopen(false) : setIsopen(true);
+  }
 
   return (
     
@@ -29,9 +31,11 @@ function Topbar() {
           </label>
           <div id="side_menu">
             <div
-              className="side_odd"
+              className="side_odd"            
               onClick={() => {
+                
                 navigate("/mainpage/mypage");
+                
               }}
             >
               mypage
@@ -88,8 +92,10 @@ function Topbar() {
             navigate("/mainpage/mypage");
           }}
         />
+         
       </div>
-    </div>
+      </div>
+     
   );
 }
 export default Topbar;

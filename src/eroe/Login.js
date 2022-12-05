@@ -2,6 +2,7 @@ import { useState } from "react";
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./css/Login.css";
+import Findid from "./Findid";
 
 function Login(props) {
   const navigate = useNavigate();

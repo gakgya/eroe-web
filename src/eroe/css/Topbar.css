@@ -7,6 +7,21 @@
   border-bottom: 2px solid #000000;
   display: flex;
 }
+.sidebar-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.sidebar-overlay.active{
+  opacity: 1;
+  visibility: visible;
+}
 
 .Eroetext {
   width: 372px;
@@ -103,6 +118,7 @@
   font-weight: 400;
   font-size: 20px;
   color: #039000;
+  border-right:solid 1px #039000;
 }
 #side_menu .side_even {
   height: 55px;
