@@ -87,7 +87,9 @@ function Findid() {
           />
           <label className="password_txt">이름</label>
           <input className="password_box" type="name" onChange={onChangeName} />
-          <button onClick={idchecking}>id찾기</button>
+          <div>
+          <button className = 'signup_button2'style = {{marginTop : 15}}onClick={idchecking}>ID찾기</button>
+        </div>
         </div>
       </div>
     </div>

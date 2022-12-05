@@ -18,7 +18,11 @@
   font-family: "Kaisei HarunoUmi", serif;
 
 }
-
+.iddd{
+  font-size: large;
+  font-weight: 400;
+  color :#039000;
+}
 .signup_txt {
 
 width: 100%;
@@ -240,4 +244,18 @@ color: #039000;
 .center{
 	width: 110px; 
 	margin: 0 auto;
+}
+.sub_button2 {
+
+  width: 75px;
+  height: 20px;
+  background: rgba(3, 144, 0, 0.2);
+  color: #039000;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  padding-top: 5px;
+  text-align: center;
+  border: none;
+  border-radius: 15px ;
 }

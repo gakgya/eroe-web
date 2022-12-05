@@ -103,11 +103,26 @@
   text-align: center;
   border: none;
 }
-#find {
+.find {
   display: flex;
   color: #039000;
 }
 
 .find-btn {
   margin-right: 5px;
+  color :#039000;
+}
+.signup_button2{
+  width: 100%;
+  height: 45px;
+  margin: 4px auto;
+  background: rgba(3, 144, 0, 0.2);
+  color: #039000;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  padding-top: 5px;
+  text-align: center;
+  border: none;
+  
 }

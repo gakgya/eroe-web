@@ -73,13 +73,13 @@ function Login(props) {
             value={password}
             onChange={onChangePassword}
           />
-          <div id="find">
-            <button className="find-btn"onClick={() => {
+          <div className="find">
+            <div className="find-btn" onClick={() => {
               navigate("/findid");
-            }}>아이디 찾기</button>
-            <button className="find-btn" onClick = {()=> {
+            }}>아이디 찾기</div>
+            <div className="find-btn" onClick = {()=> {
               navigate('/findpw')
-            }}>비밀번호 찾기</button>
+            }}>비밀번호 찾기</div>
           </div>
           <button className="login_button" onClick={check}>
             로그인

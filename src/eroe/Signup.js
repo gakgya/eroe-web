@@ -132,7 +132,7 @@ function Signup() {
           <div>
             <label className="sgid_txt">아이디</label> <br />
             <input onChange={onChangeId} value={id} className="sgid_box" />
-            <button onClick={onCall}>ID확인</button>
+            <div className = 'sub_button2' onClick={onCall}>ID확인</div>
           </div>
           <div>
             <label className="sgpassword_txt">비밀번호</label> <br />
