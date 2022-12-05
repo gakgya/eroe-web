@@ -20,6 +20,7 @@ import Modifyuserinfo from "./Modifyuserinfo";
 import Locationinfo from "./Locationinfo";
 import Setting from "./Setting";
 import Announcement from "./Announcement";
+import Servicecenter from "./Servicecenter";
 
 function Main(props) {
   const navigate = useNavigate();
@@ -66,6 +67,7 @@ function Main(props) {
             <Route path="/locationinfo" element={<Locationinfo />}></Route>
             <Route path="/setting" element={<Setting />}></Route>
             <Route path="/announcement" element={<Announcement />}></Route>
+            <Route path="/servicecenter" element={<Servicecenter />}></Route>
           </Routes>
         </div>
       </div>

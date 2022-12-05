@@ -1,0 +1,80 @@
+.servicecenter_button {
+    width: 100%;
+    height: 55px;
+    left: 0px;
+    top: 55px;
+    border: none;
+    
+    background: rgba(3, 144, 0, 0.4);
+    
+    font-family: 'Kaisei HarunoUmi';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 29px;
+        color: #039000;
+    }
+    
+    .qna_button {
+    width: 100%;
+    height: 55px;
+    left: 0px;
+    top: 110px;
+    border: none;
+    
+    background: rgba(3, 144, 0, 0.2);
+    
+    font-family: 'Kaisei HarunoUmi';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 29px;
+        color: #039000;
+    }
+    
+    .onetoone_button {
+    width: 100%;
+    height: 55px;
+    left: 0px;
+    top: 165px;
+    border: none;
+    
+    background: rgba(3, 144, 0, 0.4);
+    
+    font-family: 'Kaisei HarunoUmi';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 29px;
+        color: #039000;
+    }
+    
+    .servicecenternum_button {
+    width: 100%;
+    height: 55px;
+    left: 0px;
+    top: 275px;
+    border: none;
+    background: #039000;
+    
+    font-family: 'Kaisei HarunoUmi';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 29px;
+        color: white;
+    }
+
+    .servicecenternum_button > a {
+        color: white;
+        text-decoration: none;
+      }
+
+.empty {
+    width: 100%;
+    height: 55px;
+    left: 0px;
+    top: 275px;
+    border: none;
+    background: white;
+}

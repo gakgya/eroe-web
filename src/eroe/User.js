@@ -26,10 +26,10 @@ function User() {
             type="button"
             className="user_info"
             onClick={() => {
-              navigate("/mainpage/locationinfo");
+              navigate("/mainpage/modifyuserinfo");
             }}
           >
-            환자 정보 수정
+            사용자 정보 수정
           </button>
         </div>
       </div>
