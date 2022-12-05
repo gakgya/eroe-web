@@ -21,6 +21,8 @@ import Locationinfo from "./Locationinfo";
 import Setting from "./Setting";
 import Announcement from "./Announcement";
 import Servicecenter from "./Servicecenter";
+import Findid from "./Findid";
+import Findpw from "./Findpw";
 
 function Main(props) {
   const navigate = useNavigate();
@@ -68,6 +70,7 @@ function Main(props) {
             <Route path="/setting" element={<Setting />}></Route>
             <Route path="/announcement" element={<Announcement />}></Route>
             <Route path="/servicecenter" element={<Servicecenter />}></Route>
+           
           </Routes>
         </div>
       </div>

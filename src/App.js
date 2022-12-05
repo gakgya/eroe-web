@@ -12,9 +12,10 @@ import {
 import Mainpage from "./eroe/Mainpage";
 import Login from "./eroe/Login";
 import Signup from "./eroe/Signup";
+import Findid from "./eroe/Findid";
 import NotFound from "./eroe/NotFound";
 import Main from "./eroe/Main";
-
+import Findpw from "./eroe/Findpw";
 function App() {
   
   const [loginid, setLoginId] = useState("");
@@ -27,6 +28,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login getId={getId} />}></Route>
+          <Route path="/findid" element={<Findid />}></Route>
+            <Route path="/findpw" element={<Findpw />}></Route>
           <Route
             path="/mainpage/*"
             element={<Main id={loginid} getId={getId} />}
