@@ -38,6 +38,11 @@ font-family: 'Kaisei HarunoUmi';
     left: 0px;
     top: 220px;
     border: none;
+    display: flex;
+    align-items: center;
+
+
+
     
     background: rgba(3, 144, 0, 0.4);
     
@@ -63,4 +68,16 @@ font-family: 'Kaisei HarunoUmi';
     font-size: 25px;
     line-height: 29px;
     color: #039000;
+}
+
+.center {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.to {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 23px;
 }
