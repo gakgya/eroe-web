@@ -78,7 +78,7 @@ function Signup() {
         post_phone: phone,
         post_birth: birth,
       };
-      fetch("http://gakgya.iptime.org:3001idplz", {
+      fetch("http://gakgya.iptime.org:3001/idplz", {
         method: "post", // 통신방법
         headers: {
           "content-type": "application/json",
