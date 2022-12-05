@@ -2,7 +2,6 @@ import { useState } from "react";
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./css/Login.css";
-import Findid from "./Findid";
 
 function Login(props) {
   const navigate = useNavigate();
@@ -75,8 +74,12 @@ function Login(props) {
             onChange={onChangePassword}
           />
           <div id="find">
-            <div className="find-btn">아이디 찾기</div>
-            <div className="find-btn">비밀번호 찾기</div>
+            <button className="find-btn"onClick={() => {
+              navigate("/findid");
+            }}>아이디 찾기</button>
+            <button className="find-btn" onClick = {()=> {
+              navigate('/findpw')
+            }}>비밀번호 찾기</button>
           </div>
           <button className="login_button" onClick={check}>
             로그인

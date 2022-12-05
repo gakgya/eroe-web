@@ -71,6 +71,36 @@ app.post("/callbody", (req, res) => {
     }
   });
 });
+app.post("/callbody_find", (req, res) => {
+  const fcheck_birth = req.body.check_birth;
+  const fcheck_id = req.body.check_Id;
+  const fcheck_name = req.body.check_name;
+  var ck = 0;
+  connection.query("SELECT * FROM user ", function (err, rows, fields) {
+    if (err) {
+      console.log("불러오기 실패");
+    } else {
+      console.log(rows[0].User_Birth);
+      console.log(rows[0].User_Name);
+      console.log(rows[0].User_ID);
+
+      for (var key in rows) {
+        if ((fcheck_id == rows[key].User_ID) && (fcheck_birth == rows[key].User_Birth) && (fcheck_name == rows[key].User_Name))  {
+          console.log(rows[key].User_Name);
+          ck = 1;
+          break;
+        } else {
+          continue;
+        }
+      }
+      if (ck == 1) {
+        res.send({fcheck_id });
+      } else {
+        res.send({ ck: "False" });
+      }
+    }
+  });
+});
 
 app.post("/login", (req, res) => {
   const check_id = req.body.post_id;

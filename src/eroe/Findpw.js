@@ -3,12 +3,10 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./css/Login.css";
 
-function Findid() {
+function Findpw() {
     const [birth, setBirth] = useState("");
-    const [id, setId] = useState("");
     const [name, setName] = useState("");
     const [birthCheck, setBirthcheck] = useState("True");
-    const [idcheck, setIdcheck] = useState("True");
     const [nameCheck, setnameCheck] = useState("True");
   
 
@@ -20,7 +18,9 @@ function Findid() {
         function onChangeName(e) {
         setName(e.target.value);
         setnameCheck("True");
+
       }
+
     function idchecking() {
         if (birth === "" ) {
             alert("생년월일 입력해주십시오."); 
@@ -31,29 +31,26 @@ function Findid() {
             return;
         }
         else {
-
-        const birthpost = { check_birth : birth };
+        const birthpost = { check_birth:birth };
         const namepost = { check_name: name };
-        const idpost = {check_id : id};
         fetch("http://gakgya.iptime.org:3001/callbody_find", {
           method: "post",
           headers: {
             "content-type": "application/json",
-            
           },
           body: JSON.stringify(birthpost),
           body: JSON.stringify(namepost),
-          body: JSON.stringify(idpost),
 
         })
           .then((res) => res.json())
           .then((json) => {
-            setIdcheck(json.ck1)
-            if (json.ck1 == "True") {
-              alert("id는 이거다",json.ck);
+            setBirthcheck(json.ck);
+            setnameCheck(json.ck);
+            if (json.ck == "True") {
+              alert("id 는", json.ck);
               setBirth("");
               setName("");
-            } else if (json.ck1 == "False") {
+            } else if (json.ck == "False") {
               alert("정보가 일치하지 않습니다.");
             }
           });
@@ -98,7 +95,7 @@ function Findid() {
             type="name"        
             onChange={onChangeName}
           />
-          <button onClick = {idchecking}>id찾기</button>
+          <button onClick = {idchecking}>ID확인하기</button>
             
         
             </div>   
@@ -107,4 +104,4 @@ function Findid() {
     )
     }
 
-export default Findid;
+export default Findpw;

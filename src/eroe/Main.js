@@ -21,6 +21,8 @@ import Locationinfo from "./Locationinfo";
 import Setting from "./Setting";
 import Announcement from "./Announcement";
 import Servicecenter from "./Servicecenter";
+import Findid from "./Findid";
+import Findpw from "./Findpw";
 
 function Main(props) {
   const navigate = useNavigate();
@@ -62,12 +64,16 @@ function Main(props) {
             <Route path="/notice" element={<Notice />}></Route>
             <Route path="/report" element={<Report />}></Route>
             <Route path="/adduser" element={<Adduser />}></Route>
-            <Route path="/modifymyinfo" element={<Modifymyinfo />}></Route>
+            <Route
+              path="/modifymyinfo"
+              element={<Modifymyinfo id={props.id} />}
+            ></Route>
             <Route path="/modifyuserinfo" element={<Modifyuserinfo />}></Route>
             <Route path="/locationinfo" element={<Locationinfo />}></Route>
             <Route path="/setting" element={<Setting />}></Route>
             <Route path="/announcement" element={<Announcement />}></Route>
             <Route path="/servicecenter" element={<Servicecenter />}></Route>
+           
           </Routes>
         </div>
       </div>
